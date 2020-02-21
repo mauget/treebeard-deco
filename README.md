@@ -1,6 +1,13 @@
 # Treebeard View Tree
 This tree view uses a customized container and header via decorator interfaces.
 
+### Install and Run
+
+1. `git clone https://github.com/mauget/treebeard-deco`
+2. `cd treebeard-deco`
+3. `yarn install`
+4. `yarn start`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
