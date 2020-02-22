@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +124,7 @@
       <workItem from="1582322382172" duration="950000" />
       <workItem from="1582323345431" duration="925000" />
       <workItem from="1582324277295" duration="112000" />
-      <workItem from="1582325256417" duration="1594000" />
+      <workItem from="1582325256417" duration="2362000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -141,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582338592602</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix tests">
+      <created>1582339127509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582339127509</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix tests">
+      <created>1582339158769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582339158769</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,13 +162,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit README.md about install and start specifics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit README.md about install and start specifics" />
+    <MESSAGE value="Fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tests" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1582339127368">
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1582339158630">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582339127368" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582339158630" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325804137" />
     <state x="219" y="97" key="DiffContextDialog" timestamp="1582325358602">
       <screen x="61" y="23" width="1619" height="1027" />
@@ -233,10 +247,10 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582339130015">
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582339161810">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582339130015" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582339161810" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325814791" />
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582325343124">
       <screen x="61" y="23" width="1619" height="1027" />
