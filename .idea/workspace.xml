@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +31,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -95,18 +97,30 @@
       <workItem from="1582322382172" duration="950000" />
       <workItem from="1582323345431" duration="925000" />
       <workItem from="1582324277295" duration="112000" />
-      <workItem from="1582325256417" duration="491000" />
+      <workItem from="1582325256417" duration="1110000" />
     </task>
+    <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
+      <created>1582325804280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582325804280</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Edit README.md about install and start specifics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit README.md about install and start specifics" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="450" y="121" key="CommitChangelistDialog2" timestamp="1582325364042">
+    <state x="450" y="121" key="CommitChangelistDialog2" timestamp="1582325804137">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
-    <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325364042" />
+    <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325804137" />
     <state x="219" y="97" key="DiffContextDialog" timestamp="1582325358602">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
@@ -171,6 +185,10 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
+    <state x="469" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582325814791">
+      <screen x="61" y="23" width="1619" height="1027" />
+    </state>
+    <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325814791" />
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582325343124">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
