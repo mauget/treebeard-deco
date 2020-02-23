@@ -4,7 +4,6 @@
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CustomContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getCustomTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/getCustomTheme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="JavaScript Debug.Debug Application">
     <configuration name="main app heading" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -107,8 +106,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build" />
-        <item itemvalue="Jest.main app heading" />
         <item itemvalue="npm.test" />
+        <item itemvalue="Jest.main app heading" />
         <item itemvalue="Node.js.index.js" />
       </list>
     </recent_temporary>
@@ -127,6 +126,7 @@
       <workItem from="1582323345431" duration="925000" />
       <workItem from="1582324277295" duration="112000" />
       <workItem from="1582325256417" duration="5275000" />
+      <workItem from="1582423417798" duration="3514000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582380160905</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Green de-lint">
+      <created>1582423572967</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582423572967</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,49 +195,51 @@
     <MESSAGE value="Fix tests" />
     <MESSAGE value="travis cl" />
     <MESSAGE value="Cursor point on caret" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cursor point on caret" />
+    <MESSAGE value="Green de-lint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Green de-lint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582340900035">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1582340900035" />
-    <state x="450" y="121" key="CommitChangelistDialog2" timestamp="1582380160716">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1582423572698">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582340125769" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582423572698" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582380160716" />
-    <state x="219" y="97" key="DiffContextDialog" timestamp="1582379779769">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state x="214" y="97" key="DiffContextDialog" timestamp="1582423549827">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
+    <state x="214" y="97" key="DiffContextDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1582423549827" />
     <state x="219" y="97" key="DiffContextDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582379779769" />
     <state x="719" y="419" key="Github.ShareDialog" timestamp="1582324149660">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="719" y="419" key="Github.ShareDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582324149660" />
-    <state width="1575" height="260" key="GridCell.Tab.0.bottom" timestamp="1582387772781">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state width="1575" height="261" key="GridCell.Tab.0.bottom" timestamp="1582425567493">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.bottom/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
-    <state width="1575" height="261" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1582340966038" />
+    <state width="1575" height="261" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567493" />
     <state width="1575" height="260" key="GridCell.Tab.0.bottom/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772781" />
-    <state width="1575" height="260" key="GridCell.Tab.0.center" timestamp="1582387772780">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state width="1575" height="261" key="GridCell.Tab.0.center" timestamp="1582425567492">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.center/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
-    <state width="1575" height="261" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1582340966037" />
+    <state width="1575" height="261" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567492" />
     <state width="1575" height="260" key="GridCell.Tab.0.center/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772780" />
-    <state width="1575" height="260" key="GridCell.Tab.0.left" timestamp="1582387772780">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state width="1575" height="261" key="GridCell.Tab.0.left" timestamp="1582425567491">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.left/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
-    <state width="1575" height="261" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1582340966036" />
+    <state width="1575" height="261" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567491" />
     <state width="1575" height="260" key="GridCell.Tab.0.left/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772780" />
-    <state width="1575" height="260" key="GridCell.Tab.0.right" timestamp="1582387772780">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state width="1575" height="261" key="GridCell.Tab.0.right" timestamp="1582425567492">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.right/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
-    <state width="1575" height="261" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582340966037" />
+    <state width="1575" height="261" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567492" />
     <state width="1575" height="260" key="GridCell.Tab.0.right/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772780" />
     <state width="1575" height="260" key="GridCell.Tab.1.bottom" timestamp="1582387772781">
       <screen x="61" y="23" width="1619" height="1027" />
@@ -272,18 +281,19 @@
     </state>
     <state width="1575" height="260" key="GridCell.Tab.2.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582338603424" />
     <state width="1575" height="260" key="GridCell.Tab.2.right/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772782" />
-    <state x="632" y="236" key="RollbackChangesDialog" timestamp="1582379783533">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state x="629" y="236" key="RollbackChangesDialog" timestamp="1582426718915">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
+    <state x="629" y="236" key="RollbackChangesDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1582426718915" />
     <state x="632" y="236" key="RollbackChangesDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582379783533" />
     <state x="371" y="158" key="SettingsEditor" timestamp="1582324388443">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="469" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582380163182">
-      <screen x="61" y="23" width="1619" height="1027" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582423585982">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582340128073" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582423585982" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582380163182" />
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582325343124">
       <screen x="61" y="23" width="1619" height="1027" />
@@ -293,5 +303,17 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="533" y="240" key="search.everywhere.popup/61.23.1619.1027@61.23.1619.1027" timestamp="1582323700719" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/react-treebeard/dist/components/Decorators/Toggle.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
