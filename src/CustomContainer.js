@@ -1,4 +1,5 @@
 import React from "react";
+// noinspection ES6CheckImport
 import {decorators} from "react-treebeard";
 
 export default class CustomContainer extends decorators.Container {
@@ -12,7 +13,7 @@ export default class CustomContainer extends decorators.Container {
             <div style={style.container[0]}>
                 <decorators.Header node={node} style={style.header}/>
                 <span onClick={onClick} style={{float: "left", cursor: "pointer"}}>
-                    {terminal ? null : this.renderToggle()}
+                    {terminal ? null : super.renderToggle()}
                 </span>
             </div>
         );

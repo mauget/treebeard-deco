@@ -1,3 +1,4 @@
+// noinspection ES6CheckImport
 import {theme as defaultTheme} from 'react-treebeard';
 
 // Get override copy of default TreeBeard theme for caller
