@@ -1,4 +1,5 @@
 import React from "react";
+import nodeCallback from "./nodeCallback";
 
 export default function CustomHeader(props) {
 
@@ -6,10 +7,11 @@ export default function CustomHeader(props) {
     const displayName = node.name;
     const thisStyle = style.base;
 
-    const ignoreHeaderClick = ev => {
+    const handleHeaderClick = ev => {
         ev.preventDefault();
-        ev.stopPropagation();
-        // Invoke optional alternative processing here
+
+        // Invoke node-select processing
+        nodeCallback(ev.target.innerText);
     };
 
     const handleContextMenu = ev => {
@@ -21,7 +23,7 @@ export default function CustomHeader(props) {
         <div
             className={"App-header"}
             style={thisStyle}
-            onClick={ignoreHeaderClick}
+            onClick={handleHeaderClick}
             onContextMenu={handleContextMenu}>
 
             <div className={"App-header-name"}>
