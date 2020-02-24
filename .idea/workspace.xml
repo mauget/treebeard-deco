@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,8 @@
       <workItem from="1582323345431" duration="925000" />
       <workItem from="1582324277295" duration="112000" />
       <workItem from="1582325256417" duration="5275000" />
-      <workItem from="1582423417798" duration="3514000" />
+      <workItem from="1582423417798" duration="3595000" />
+      <workItem from="1582550260676" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582423572967</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Disable lint on this.renderToggle()">
+      <created>1582427135565</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582427135565</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,17 +203,18 @@
     <MESSAGE value="travis cl" />
     <MESSAGE value="Cursor point on caret" />
     <MESSAGE value="Green de-lint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Green de-lint" />
+    <MESSAGE value="Disable lint on this.renderToggle()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disable lint on this.renderToggle()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582340900035">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1582340900035" />
-    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1582423572698">
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1582427135451">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582423572698" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582427135451" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582380160716" />
     <state x="214" y="97" key="DiffContextDialog" timestamp="1582423549827">
       <screen x="56" y="23" width="1624" height="1027" />
@@ -217,29 +225,33 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="719" y="419" key="Github.ShareDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582324149660" />
-    <state width="1575" height="261" key="GridCell.Tab.0.bottom" timestamp="1582425567493">
+    <state width="1575" height="261" key="GridCell.Tab.0.bottom" timestamp="1582551163670">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.bottom/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
-    <state width="1575" height="261" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567493" />
+    <state width="1575" height="261" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1582550471226" />
+    <state width="1575" height="261" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1582551163670" />
     <state width="1575" height="260" key="GridCell.Tab.0.bottom/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772781" />
-    <state width="1575" height="261" key="GridCell.Tab.0.center" timestamp="1582425567492">
+    <state width="1575" height="261" key="GridCell.Tab.0.center" timestamp="1582551163669">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.center/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
-    <state width="1575" height="261" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567492" />
+    <state width="1575" height="261" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1582550471225" />
+    <state width="1575" height="261" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1582551163669" />
     <state width="1575" height="260" key="GridCell.Tab.0.center/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772780" />
-    <state width="1575" height="261" key="GridCell.Tab.0.left" timestamp="1582425567491">
+    <state width="1575" height="261" key="GridCell.Tab.0.left" timestamp="1582551163669">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.left/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
-    <state width="1575" height="261" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567491" />
+    <state width="1575" height="261" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1582550471224" />
+    <state width="1575" height="261" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1582551163669" />
     <state width="1575" height="260" key="GridCell.Tab.0.left/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772780" />
-    <state width="1575" height="261" key="GridCell.Tab.0.right" timestamp="1582425567492">
+    <state width="1575" height="261" key="GridCell.Tab.0.right" timestamp="1582551163670">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.right/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
-    <state width="1575" height="261" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582425567492" />
+    <state width="1575" height="261" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1582550471226" />
+    <state width="1575" height="261" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582551163670" />
     <state width="1575" height="260" key="GridCell.Tab.0.right/61.23.1619.1027@61.23.1619.1027" timestamp="1582387772780" />
     <state width="1575" height="260" key="GridCell.Tab.1.bottom" timestamp="1582387772781">
       <screen x="61" y="23" width="1619" height="1027" />
@@ -290,10 +302,10 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582423585982">
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1582427137758">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582423585982" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582427137758" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582380163182" />
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582325343124">
       <screen x="61" y="23" width="1619" height="1027" />
@@ -310,7 +322,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/react-treebeard/dist/components/Decorators/Toggle.js</url>
           <line>31</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
