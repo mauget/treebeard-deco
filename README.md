@@ -8,6 +8,8 @@ This tree view uses a customized container and header via decorator interfaces.
 3. `yarn install`
 4. `yarn start`
 
+![Screen Capture](doc/treebeard-decorated.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
