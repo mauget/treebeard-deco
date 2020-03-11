@@ -10,6 +10,15 @@ This tree view uses a customized container and header via decorator interfaces.
 
 ![Screen Capture](doc/treebeard-decorated.png)
 
+### Custom Features
+
+1. mouseover highlight of nodes
+2. Right-click context
+3. Left-click callback
+
+
+-------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
