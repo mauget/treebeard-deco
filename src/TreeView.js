@@ -2,6 +2,7 @@
 // Lou Mauget, 2020-02-20 (lotta 0's and 2's)
 
 import React, {useState} from 'react';
+// noinspection ES6CheckImport
 import {Treebeard, decorators} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
 import getCustomTheme from './getCustomTheme';
