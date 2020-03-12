@@ -3,7 +3,6 @@
 
 import React, {useState} from 'react';
 import {Treebeard, decorators} from 'react-treebeard';
-import CustomContainer from './CustomContainer';
 import CustomHeader from './CustomHeader';
 import getCustomTheme from './getCustomTheme';
 
@@ -13,7 +12,6 @@ export default function TreeView(props) {
     const [theme] = useState(getCustomTheme());
 
     decorators.Header = CustomHeader;
-    decorators.Container = CustomContainer;
 
     const handleToggle = (node, toggled) => {
         if (cursor) {
