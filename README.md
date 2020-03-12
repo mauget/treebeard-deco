@@ -1,5 +1,8 @@
 # Treebeard View Tree
-This tree view uses a customized container and header via decorator interfaces.
+This tree view uses a slightly cutomized header via a standard TreeBeard-supplied decorator module.
++ It highiights any mouse-over tree node via JavaScript
++ Each node invokes a suppplied callback if clicked.
++ A right-click on a node calls a context menu placehoder alert.
 
 ### Install and Run
 
