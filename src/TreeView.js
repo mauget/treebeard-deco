@@ -2,6 +2,7 @@
 // Lou Mauget, 2020-02-20 (lotta 0's and 2's)
 
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 // noinspection ES6CheckImport
 import {Treebeard, decorators} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
@@ -30,9 +31,11 @@ export default function TreeView(props) {
         <Treebeard
             style={theme}
             data={props.data}
-            decorators={decorators}
             onToggle={handleToggle}
         />
     );
 }
 
+TreeView.propTypes = {
+    data: PropTypes.object.isRequired
+};
