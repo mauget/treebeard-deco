@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +159,7 @@
       <workItem from="1582568728791" duration="19069000" />
       <workItem from="1583069982282" duration="128000" />
       <workItem from="1583929323995" duration="407000" />
-      <workItem from="1583930025897" duration="12619000" />
+      <workItem from="1583930025897" duration="13290000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -300,7 +301,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583974876021</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add several alternatives of test data">
+      <created>1583974911395</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1583974911395</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Use spread to copy copy object">
+      <created>1583975234932</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583975234932</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Removed unneeded CustomContainer.js">
+      <created>1583975522549</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583975522549</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,59 +343,66 @@
     <MESSAGE value="Log data and JSON of data" />
     <MESSAGE value="Init treeModel" />
     <MESSAGE value="Disable active attribute support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Disable active attribute support" />
+    <MESSAGE value="Add several alternatives of test data" />
+    <MESSAGE value="Use spread to copy copy object" />
+    <MESSAGE value="Removed unneeded CustomContainer.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unneeded CustomContainer.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="161" y="123" width="1419" height="793" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583970824942">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
     <state x="161" y="123" width="1419" height="793" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583970824942" />
+    <state x="607" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583975410497">
+      <screen x="54" y="23" width="1626" height="1027" />
+    </state>
+    <state x="607" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583975410497" />
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582340900035">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1582340900035" />
-    <state x="444" y="121" key="CommitChangelistDialog2" timestamp="1583974875909">
+    <state x="444" y="121" key="CommitChangelistDialog2" timestamp="1583975589880">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
-    <state x="444" y="121" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1583974875909" />
+    <state x="444" y="121" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1583975589880" />
     <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582657631952" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
-    <state x="212" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1583974872523">
+    <state x="212" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1583975575156">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
-    <state x="212" y="97" width="1300" height="821" key="DiffContextDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583974872523" />
+    <state x="212" y="97" width="1300" height="821" key="DiffContextDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583975575156" />
     <state x="214" y="97" key="DiffContextDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1582575051359" />
     <state x="219" y="97" key="DiffContextDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582379779769" />
     <state x="719" y="419" key="Github.ShareDialog" timestamp="1582324149660">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="719" y="419" key="Github.ShareDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582324149660" />
-    <state width="1575" height="145" key="GridCell.Tab.0.bottom" timestamp="1583974079608">
+    <state width="1575" height="145" key="GridCell.Tab.0.bottom" timestamp="1583975071077">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.bottom/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
-    <state width="1575" height="145" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1583974079608" />
+    <state width="1575" height="145" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1583975071077" />
     <state width="1575" height="261" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1582659383877" />
     <state width="1575" height="261" key="GridCell.Tab.0.bottom/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="145" key="GridCell.Tab.0.center" timestamp="1583974079607">
+    <state width="1575" height="145" key="GridCell.Tab.0.center" timestamp="1583975071076">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.center/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
-    <state width="1575" height="145" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1583974079607" />
+    <state width="1575" height="145" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1583975071076" />
     <state width="1575" height="261" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1582659383876" />
     <state width="1575" height="261" key="GridCell.Tab.0.center/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="145" key="GridCell.Tab.0.left" timestamp="1583974079605">
+    <state width="1575" height="145" key="GridCell.Tab.0.left" timestamp="1583975071076">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.left/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
-    <state width="1575" height="145" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1583974079605" />
+    <state width="1575" height="145" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1583975071076" />
     <state width="1575" height="261" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1582659383876" />
     <state width="1575" height="261" key="GridCell.Tab.0.left/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109416" />
-    <state width="1575" height="145" key="GridCell.Tab.0.right" timestamp="1583974079607">
+    <state width="1575" height="145" key="GridCell.Tab.0.right" timestamp="1583975071076">
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.right/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
-    <state width="1575" height="145" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583974079607" />
+    <state width="1575" height="145" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583975071076" />
     <state width="1575" height="261" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582659383877" />
     <state width="1575" height="261" key="GridCell.Tab.0.right/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
     <state width="1575" height="269" key="GridCell.Tab.1.bottom" timestamp="1583972549625">
@@ -424,9 +453,10 @@
     <state width="1575" height="269" key="GridCell.Tab.2.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583972549625" />
     <state width="1575" height="260" key="GridCell.Tab.2.right/56.23.1624.1027@56.23.1624.1027" timestamp="1582572467293" />
     <state width="1575" height="260" key="GridCell.Tab.2.right/61.23.1619.1027@61.23.1619.1027" timestamp="1582572371758" />
-    <state x="629" y="236" key="RollbackChangesDialog" timestamp="1582575053662">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state x="628" y="236" key="RollbackChangesDialog" timestamp="1583975020452">
+      <screen x="54" y="23" width="1626" height="1027" />
     </state>
+    <state x="628" y="236" key="RollbackChangesDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583975020452" />
     <state x="629" y="236" key="RollbackChangesDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1582575053662" />
     <state x="632" y="236" key="RollbackChangesDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582379783533" />
     <state x="371" y="158" key="SettingsEditor" timestamp="1582324388443">
