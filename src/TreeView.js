@@ -4,7 +4,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 // noinspection ES6CheckImport
-import {Treebeard, decorators} from 'react-treebeard';
+import {decorators, Treebeard} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
 import getCustomTheme from './getCustomTheme';
 
