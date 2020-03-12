@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +173,7 @@
       <workItem from="1582568728791" duration="19069000" />
       <workItem from="1583069982282" duration="128000" />
       <workItem from="1583929323995" duration="407000" />
-      <workItem from="1583930025897" duration="16949000" />
+      <workItem from="1583930025897" duration="17142000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -366,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583978189614</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Tweaked unit tests for lint">
+      <created>1584026181294</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1584026181295</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +398,8 @@
     <MESSAGE value="Removed alternative demo data" />
     <MESSAGE value="Obtain tree data from treeModel via getScenarios" />
     <MESSAGE value="Changed unit test title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed unit test title" />
+    <MESSAGE value="Tweaked unit tests for lint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaked unit tests for lint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="161" y="123" width="1419" height="793" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583976047916">
@@ -408,49 +414,49 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1582340900035" />
-    <state x="444" y="121" key="CommitChangelistDialog2" timestamp="1583978189501">
-      <screen x="54" y="23" width="1626" height="1027" />
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584026181152">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="444" y="121" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978189501" />
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1582657631952" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584026181152" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
-    <state x="212" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1583975575156">
-      <screen x="54" y="23" width="1626" height="1027" />
+    <state x="214" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1584026144682">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="212" y="97" width="1300" height="821" key="DiffContextDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583975575156" />
-    <state x="214" y="97" key="DiffContextDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1582575051359" />
+    <state x="214" y="97" key="DiffContextDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1584026144682" />
     <state x="219" y="97" key="DiffContextDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582379779769" />
     <state x="719" y="419" key="Github.ShareDialog" timestamp="1582324149660">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="719" y="419" key="Github.ShareDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582324149660" />
-    <state width="1575" height="414" key="GridCell.Tab.0.bottom" timestamp="1584026087982">
+    <state width="1575" height="414" key="GridCell.Tab.0.bottom" timestamp="1584026195600">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.bottom/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
     <state width="1575" height="414" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138131" />
-    <state width="1575" height="414" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1584026087982" />
+    <state width="1575" height="414" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1584026195600" />
     <state width="1575" height="261" key="GridCell.Tab.0.bottom/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="414" key="GridCell.Tab.0.center" timestamp="1584026087981">
+    <state width="1575" height="414" key="GridCell.Tab.0.center" timestamp="1584026195599">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.center/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
     <state width="1575" height="414" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
-    <state width="1575" height="414" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1584026087981" />
+    <state width="1575" height="414" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1584026195599" />
     <state width="1575" height="261" key="GridCell.Tab.0.center/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="414" key="GridCell.Tab.0.left" timestamp="1584026087981">
+    <state width="1575" height="414" key="GridCell.Tab.0.left" timestamp="1584026195599">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.left/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
     <state width="1575" height="414" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
-    <state width="1575" height="414" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1584026087981" />
+    <state width="1575" height="414" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1584026195599" />
     <state width="1575" height="261" key="GridCell.Tab.0.left/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109416" />
-    <state width="1575" height="414" key="GridCell.Tab.0.right" timestamp="1584026087981">
+    <state width="1575" height="414" key="GridCell.Tab.0.right" timestamp="1584026195600">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.right/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
     <state width="1575" height="414" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
-    <state width="1575" height="414" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1584026087981" />
+    <state width="1575" height="414" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1584026195600" />
     <state width="1575" height="261" key="GridCell.Tab.0.right/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
     <state width="1575" height="269" key="GridCell.Tab.1.bottom" timestamp="1583976137165">
       <screen x="54" y="23" width="1626" height="1027" />
@@ -510,11 +516,11 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="464" y="258" key="Vcs.Push.Dialog.v2" timestamp="1583978195662">
-      <screen x="54" y="23" width="1626" height="1027" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1584026219544">
+      <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="464" y="258" key="Vcs.Push.Dialog.v2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978195662" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1582657647973" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584026219544" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568749768" />
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582325343124">
       <screen x="61" y="23" width="1619" height="1027" />
