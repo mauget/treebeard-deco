@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.huskyrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lintstagedrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.huskyrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.huskyrc.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +165,7 @@
       <workItem from="1583069982282" duration="128000" />
       <workItem from="1583929323995" duration="407000" />
       <workItem from="1583930025897" duration="19642000" />
-      <workItem from="1584029599943" duration="598000" />
+      <workItem from="1584029599943" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -374,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584026328235</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Husky config+">
+      <created>1584030256030</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1584030256030</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +407,8 @@
     <MESSAGE value="Tweaked unit tests for lint" />
     <MESSAGE value="Husky init" />
     <MESSAGE value="Husky config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Husky config" />
+    <MESSAGE value="Husky config+" />
+    <option name="LAST_COMMIT_MESSAGE" value="Husky config+" />
   </component>
   <component name="WindowStateProjectService">
     <state x="334" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584026696244">
@@ -427,11 +431,11 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1582340900035" />
-    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584030190538">
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584030255763">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="444" y="121" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978189501" />
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584030190538" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584030255763" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
     <state x="214" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1584026144682">
       <screen x="56" y="23" width="1624" height="1027" />

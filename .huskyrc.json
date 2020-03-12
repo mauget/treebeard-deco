@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-push": "yarn run lint-staged"
+    "pre-push": "lint-staged && eslint --fix"
   }
 }
