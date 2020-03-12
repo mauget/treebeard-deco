@@ -15,7 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "precommit": "yarn run lint-staged"
+    "precommit": "yarn run lint-staged && yarn run eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
