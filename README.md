@@ -11,6 +11,9 @@ This tree view uses a slightly cutomized header via a standard TreeBeard-supplie
 3. `yarn install`
 4. `yarn start`
 
+Additionally, this demo uses a `treeModel` populated from a `getScenarios` function to
+create dummy data for the tree.
+
 ![Screen Capture](doc/treebeard-decorated.png)
 
 ### Custom Features
