@@ -9,7 +9,7 @@ function App() {
     return <div className="App">
         <h1>Tree View via Decorators</h1>
         <hr/>
-        <TreeView data={Object.assign({}, data)}/>
+        <TreeView data={{...data}}/>
     </div>;
 }
 
