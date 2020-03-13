@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeView.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getCustomTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/getCustomTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/treeModel.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="306" />
+    <option name="myElementSize" value="399" />
   </component>
   <component name="ElmWorkspace">
     <elmProjects />
@@ -43,6 +34,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectId" id="1Y8RktamNlepIzmYlmsHqqQDNKc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -84,7 +80,20 @@
       <recent name="$PROJECT_DIR$/doc" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.treeModel(getScenarios()) creates expected Treebeard data">
+  <component name="RunManager" selected="Jest.renders without crashing">
+    <configuration name="main app heading" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="main app heading" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -112,16 +121,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -159,19 +158,31 @@
       <item itemvalue="Jest.treeModel(getScenarios()) creates expected Treebeard data" />
       <item itemvalue="npm.npm start" />
       <item itemvalue="npm.test" />
-      <item itemvalue="npm.build" />
       <item itemvalue="npm.lint" />
       <item itemvalue="Jest.renders without crashing" />
+      <item itemvalue="Jest.main app heading" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.treeModel(getScenarios()) creates expected Treebeard data" />
         <item itemvalue="Jest.renders without crashing" />
+        <item itemvalue="Jest.main app heading" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="Jest.treeModel(getScenarios()) creates expected Treebeard data" />
         <item itemvalue="npm.test" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -195,7 +206,7 @@
       <workItem from="1583930025897" duration="19642000" />
       <workItem from="1584029599943" duration="3224000" />
       <workItem from="1584035221772" duration="973000" />
-      <workItem from="1584037472471" duration="2652000" />
+      <workItem from="1584037472471" duration="4875000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -442,14 +453,20 @@
       <option name="project" value="LOCAL" />
       <updated>1584039985397</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Organize imports">
+      <created>1584040413559</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1584040413559</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Green de-lint" />
     <MESSAGE value="Disable lint on this.renderToggle()" />
     <MESSAGE value="Added callback example" />
     <MESSAGE value="Removed travis ci" />
@@ -474,13 +491,18 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="eslint script added" />
     <MESSAGE value="Added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests" />
+    <MESSAGE value="Organize imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organize imports" />
   </component>
   <component name="WindowStateProjectService">
     <state x="469" y="184" key="#ESLint" timestamp="1584034591296">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="469" y="184" key="#ESLint/56.23.1624.1027@56.23.1624.1027" timestamp="1584034591296" />
+    <state x="469" y="184" key="#Servers" timestamp="1584059345837">
+      <screen x="56" y="23" width="1624" height="1027" />
+    </state>
+    <state x="469" y="184" key="#Servers/56.23.1624.1027@56.23.1624.1027" timestamp="1584059345837" />
     <state x="334" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584026696244">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
@@ -497,15 +519,15 @@
       <screen x="54" y="23" width="1626" height="1027" />
     </state>
     <state x="607" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1583975410497" />
-    <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582340900035">
+    <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584046777410">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
-    <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1582340900035" />
-    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584039985120">
+    <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584040413300">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="444" y="121" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978189501" />
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584039985120" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584040413300" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
     <state x="214" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1584035532959">
       <screen x="56" y="23" width="1624" height="1027" />
@@ -517,33 +539,33 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="719" y="419" key="Github.ShareDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582324149660" />
-    <state width="1575" height="254" key="GridCell.Tab.0.bottom" timestamp="1584040346903">
+    <state width="1575" height="254" key="GridCell.Tab.0.bottom" timestamp="1584060211218">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.bottom/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
     <state width="1575" height="414" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138131" />
-    <state width="1575" height="254" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1584040346903" />
+    <state width="1575" height="254" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1584060211218" />
     <state width="1575" height="261" key="GridCell.Tab.0.bottom/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="254" key="GridCell.Tab.0.center" timestamp="1584040346902">
+    <state width="1575" height="254" key="GridCell.Tab.0.center" timestamp="1584060211217">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.center/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
     <state width="1575" height="414" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
-    <state width="1575" height="254" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1584040346902" />
+    <state width="1575" height="254" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1584060211217" />
     <state width="1575" height="261" key="GridCell.Tab.0.center/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="254" key="GridCell.Tab.0.left" timestamp="1584040346902">
+    <state width="1575" height="254" key="GridCell.Tab.0.left" timestamp="1584060211216">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.left/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
     <state width="1575" height="414" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
-    <state width="1575" height="254" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1584040346902" />
+    <state width="1575" height="254" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1584060211216" />
     <state width="1575" height="261" key="GridCell.Tab.0.left/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109416" />
-    <state width="1575" height="254" key="GridCell.Tab.0.right" timestamp="1584040346902">
+    <state width="1575" height="254" key="GridCell.Tab.0.right" timestamp="1584060211217">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state width="1580" height="261" key="GridCell.Tab.0.right/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
     <state width="1575" height="414" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
-    <state width="1575" height="254" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1584040346902" />
+    <state width="1575" height="254" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1584060211217" />
     <state width="1575" height="261" key="GridCell.Tab.0.right/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
     <state width="1575" height="269" key="GridCell.Tab.1.bottom" timestamp="1584026560509">
       <screen x="56" y="23" width="1624" height="1027" />
@@ -604,16 +626,20 @@
     </state>
     <state x="367" y="69" width="999" height="940" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1584040382435" />
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1584033338525">
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1584040428188">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="464" y="258" key="Vcs.Push.Dialog.v2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978195662" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584033338525" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584040428188" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568749768" />
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582325343124">
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325343124" />
+    <state x="744" y="382" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1584059397623">
+      <screen x="56" y="23" width="1624" height="1027" />
+    </state>
+    <state x="744" y="382" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/56.23.1624.1027@56.23.1624.1027" timestamp="1584059397623" />
     <state x="534" y="239" key="run.anything.popup" timestamp="1584040389050">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
@@ -635,6 +661,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/treebeard_deco$treeModel_getScenarios____creates_expected_Treebeard_data.info" NAME="treeModel(getScenarios()) creates expected Treebeard data Coverage Results" MODIFIED="1584040118590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/treebeard_deco$renders_without_crashing.info" NAME="renders without crashing Coverage Results" MODIFIED="1584060214701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/treebeard_deco$treeModel_getScenarios____creates_expected_Treebeard_data.info" NAME="treeModel(getScenarios()) creates expected Treebeard data Coverage Results" MODIFIED="1584040659265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/treebeard_deco$main_app_heading.info" NAME="main app heading Coverage Results" MODIFIED="1584060006914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
