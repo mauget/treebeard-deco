@@ -1,8 +1,10 @@
 /**
- * Returns a TreeBeard data model, given a list of scenarios
+ * Returns a TreeBeard data model, given a list of data item.
+ * We sort inserted items sorted by names.
  */
 
-export default function treeModel(scenarios) {
+export default function treeModel(dataItems) {
+
     const tbData = {
         name: 'Workspace',
         data: {},
@@ -15,6 +17,7 @@ export default function treeModel(scenarios) {
                 toggled: true,
                 active: true,
                 children: [
+                    //* Programatically insert dynamic children here, such as these: */
                     // {
                     //     name: 'Unnamed1',
                     //     data: {},
@@ -55,12 +58,19 @@ export default function treeModel(scenarios) {
             },
         ],
     };
+    const insertionPoint = tbData.children[0].children;
 
-    Object.keys(scenarios).forEach((key) => {
-        const item = {};
-        item.name = key;
-        item.data = {};
-        tbData.children[0].children.push(item)
+    Object.keys(dataItems).sort().forEach((key) => {
+        const child = {};
+        child.name = key;
+        child.data = dataItems[key];
+
+        delete child.data.name;
+
+        insertionPoint.splice(insertionPoint.length,0, child);
+
+        console.log(`Created child object -- ${key}: item:`, child);
     });
+
     return tbData;
 }
