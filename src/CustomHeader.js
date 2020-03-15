@@ -24,7 +24,7 @@ export default function CustomHeader(props) {
         ev.preventDefault();
 
         // Context menu processing placeholder
-        alert(`"${displayName}" right-clicked`);
+        alert(`"${displayName}" right-clicked. Replace this by a context popup.`);
     };
 
     const handleMouseEnter = ev => {
