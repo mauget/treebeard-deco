@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/treeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/treeModel.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,7 @@
       <workItem from="1584029599943" duration="3224000" />
       <workItem from="1584035221772" duration="973000" />
       <workItem from="1584037472471" duration="4910000" />
-      <workItem from="1584307632037" duration="9279000" />
+      <workItem from="1584307632037" duration="9470000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -490,14 +489,20 @@
       <option name="project" value="LOCAL" />
       <updated>1584318371465</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Handle varying case of name 1st char: sort children">
+      <created>1584319605372</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1584319605372</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Highighted node on mouseover" />
     <MESSAGE value="Added screen capture to README.md" />
     <MESSAGE value="Log data and JSON of data" />
     <MESSAGE value="Init treeModel" />
@@ -522,7 +527,8 @@
     <MESSAGE value="Import list detail data" />
     <MESSAGE value="Reword popups" />
     <MESSAGE value="Sort children" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sort children" />
+    <MESSAGE value="Handle varying case of name 1st char: sort children" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handle varying case of name 1st char: sort children" />
   </component>
   <component name="WindowStateProjectService">
     <state x="469" y="184" key="#ESLint" timestamp="1584034591296">
@@ -553,11 +559,11 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
-    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584318371209">
+    <state x="446" y="121" key="CommitChangelistDialog2" timestamp="1584319605104">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="444" y="121" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978189501" />
-    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584318371209" />
+    <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319605104" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
     <state x="214" y="97" width="1300" height="821" key="DiffContextDialog" timestamp="1584318366181">
       <screen x="56" y="23" width="1624" height="1027" />
@@ -656,11 +662,11 @@
     </state>
     <state x="367" y="69" width="999" height="940" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1584040382435" />
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1584318373703">
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2" timestamp="1584319617867">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="464" y="258" key="Vcs.Push.Dialog.v2/54.23.1626.1027@54.23.1626.1027" timestamp="1583978195662" />
-    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584318373703" />
+    <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319617867" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568749768" />
     <state x="161" y="123" width="1419" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584318734704">
       <screen x="56" y="23" width="1624" height="1027" />
