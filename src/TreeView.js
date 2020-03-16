@@ -10,17 +10,12 @@ import getCustomTheme from './getCustomTheme';
 
 export default function TreeView(props) {
 
-    const [cursor, setCursor] = useState(null);
+    const [, setCursor] = useState(null);
     const [theme] = useState(getCustomTheme());
 
     decorators.Header = CustomHeader;
 
     const handleToggle = (node, toggled) => {
-        if (cursor) {
-            cursor.active = false;
-        }
-
-        node.active = true;
         if (node.children) {
             node.toggled = toggled;
         }
