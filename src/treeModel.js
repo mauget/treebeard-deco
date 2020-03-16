@@ -62,11 +62,11 @@ export default function treeModel(dataItems) {
 
     Object
         .keys(dataItems)
-        .sort()
+        .sort((a, b) => (a.toUpperCase() <  b.toUpperCase() ? -1 : 1))
         .forEach((key) => {
             if (key) {
                 const child = {};
-                child.name = key;
+                child.name = `${key[0].toUpperCase()}${key.slice(1)}`;
                 child.data = dataItems[key];
 
                 // Fixups
