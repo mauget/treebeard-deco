@@ -17,23 +17,7 @@ export default function treeModel(dataItems) {
                 toggled: true,
                 active: true,
                 children: [
-                    //* Programatically insert dynamic children here, such as these: */
-                    // {
-                    //     name: 'Unnamed1',
-                    //     data: {},
-                    // },
-                    // {
-                    //     name: 'Test1234',
-                    //     data: {},
-                    // },
-                    // {
-                    //     name: 'Test2',
-                    //     data: {},
-                    // },
-                    // {
-                    //     name: 'Demo',
-                    //     data: {},
-                    // }
+                    //* Programmatically add dynamic children here */
                 ],
             },
             {
@@ -69,7 +53,7 @@ export default function treeModel(dataItems) {
                 child.name = `${key[0].toUpperCase()}${key.slice(1)}`;
                 child.data = dataItems[key];
 
-                // Fixups
+                // Fixup
                 delete child.data.name;
 
                 insertionPoint.splice(insertionPoint.length, 0, child);
