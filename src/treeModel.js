@@ -7,13 +7,11 @@ export default function treeModel(dataItems) {
 
     const tbData = {
         name: 'Workspace',
-        data: {},
         toggled: true,
         active: true,
         children: [
             {
                 name: 'Scenarios',
-                data: {},
                 toggled: true,
                 active: true,
                 children: [
@@ -22,7 +20,6 @@ export default function treeModel(dataItems) {
             },
             {
                 name: 'Base Layers',
-                data: {},
                 active: true,
                 toggled: false,
                 children: [
