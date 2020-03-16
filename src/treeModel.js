@@ -60,17 +60,25 @@ export default function treeModel(dataItems) {
     };
     const insertionPoint = tbData.children[0].children;
 
-    Object.keys(dataItems).sort().forEach((key) => {
-        const child = {};
-        child.name = key;
-        child.data = dataItems[key];
+    Object
+        .keys(dataItems)
+        .sort()
+        .forEach((key) => {
+            if (key) {
+                const child = {};
+                child.name = key;
+                child.data = dataItems[key];
 
-        delete child.data.name;
+                // Fixups
+                delete child.data.name;
 
-        insertionPoint.splice(insertionPoint.length,0, child);
+                insertionPoint.splice(insertionPoint.length, 0, child);
 
-        console.log(`Created child object -- ${key}: item:`, child);
-    });
+                console.log(`Created child object -- ${key}: item:`, child);
+            } else {
+                console.log('ERROR. Unexpected falsey key')
+            }
+        });
 
     return tbData;
 }
