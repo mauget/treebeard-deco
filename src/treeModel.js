@@ -17,7 +17,7 @@ export default function treeModel(dataItems) {
                 toggled: true,
                 active: true,
                 children: [
-                    //* Programatically insert dynamic children here, such as these: */
+                    //* Programmatically insert dynamic children here, such as these: */
                     // {
                     //     name: 'Unnamed1',
                     //     data: {},

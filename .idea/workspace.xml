@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/treeModel.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/treeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="399" />
@@ -52,6 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -208,6 +215,7 @@
       <workItem from="1584035221772" duration="973000" />
       <workItem from="1584037472471" duration="4910000" />
       <workItem from="1584307632037" duration="9470000" />
+      <workItem from="1584360381216" duration="228000" />
     </task>
     <task id="LOCAL-00001" summary="Edit README.md about install and start specifics">
       <created>1582325804280</created>
@@ -575,30 +583,34 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="719" y="419" key="Github.ShareDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582324149660" />
-    <state width="1575" height="254" key="GridCell.Tab.0.bottom" timestamp="1584317911605">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state width="1860" height="256" key="GridCell.Tab.0.bottom" timestamp="1584360545215">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584360545215" />
     <state width="1580" height="261" key="GridCell.Tab.0.bottom/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
     <state width="1575" height="414" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138131" />
     <state width="1575" height="254" key="GridCell.Tab.0.bottom/56.23.1624.1027@56.23.1624.1027" timestamp="1584317911605" />
     <state width="1575" height="261" key="GridCell.Tab.0.bottom/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="254" key="GridCell.Tab.0.center" timestamp="1584317911604">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state width="1860" height="256" key="GridCell.Tab.0.center" timestamp="1584360545215">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="256" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584360545215" />
     <state width="1580" height="261" key="GridCell.Tab.0.center/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
     <state width="1575" height="414" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
     <state width="1575" height="254" key="GridCell.Tab.0.center/56.23.1624.1027@56.23.1624.1027" timestamp="1584317911604" />
     <state width="1575" height="261" key="GridCell.Tab.0.center/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109417" />
-    <state width="1575" height="254" key="GridCell.Tab.0.left" timestamp="1584317911604">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state width="1860" height="256" key="GridCell.Tab.0.left" timestamp="1584360545215">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="256" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584360545215" />
     <state width="1580" height="261" key="GridCell.Tab.0.left/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126739" />
     <state width="1575" height="414" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
     <state width="1575" height="254" key="GridCell.Tab.0.left/56.23.1624.1027@56.23.1624.1027" timestamp="1584317911604" />
     <state width="1575" height="261" key="GridCell.Tab.0.left/61.23.1619.1027@61.23.1619.1027" timestamp="1583070109416" />
-    <state width="1575" height="254" key="GridCell.Tab.0.right" timestamp="1584317911605">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state width="1860" height="256" key="GridCell.Tab.0.right" timestamp="1584360545215">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="256" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584360545215" />
     <state width="1580" height="261" key="GridCell.Tab.0.right/52.23.1628.1027@52.23.1628.1027" timestamp="1582323126740" />
     <state width="1575" height="414" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583978138130" />
     <state width="1575" height="254" key="GridCell.Tab.0.right/56.23.1624.1027@56.23.1624.1027" timestamp="1584317911605" />
@@ -705,8 +717,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/treebeard_deco$renders_without_crashing.info" NAME="renders without crashing Coverage Results" MODIFIED="1584060214701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/treebeard_deco$treeModel_getScenarios____creates_expected_Treebeard_data.info" NAME="treeModel(getScenarios()) creates expected Treebeard data Coverage Results" MODIFIED="1584040659265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/treebeard_deco$main_app_heading.info" NAME="main app heading Coverage Results" MODIFIED="1584060006914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/treebeard_deco$treeModel_getScenarios____creates_expected_Treebeard_data.info" NAME="treeModel(getScenarios()) creates expected Treebeard data Coverage Results" MODIFIED="1584040659265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/treebeard_deco$renders_without_crashing.info" NAME="renders without crashing Coverage Results" MODIFIED="1584060214701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
