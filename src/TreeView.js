@@ -10,15 +10,19 @@ import getCustomTheme from './getCustomTheme';
 
 export default function TreeView(props) {
 
-    const [viewState, setViewState] = useState(0);
     const [theme] = useState(getCustomTheme());
+    const [viewState, setViewState] = useState(0);
+
+    const repaint = () => {
+        setViewState(viewState + 1);
+    };
 
     decorators.Header = CustomHeader;
 
-    const handleToggle = (node, toggled) => {
+    const onToggle = (node, toggled) => {
         if (node.children) {
             node.toggled = toggled;
-            setViewState(viewState + 1);
+            repaint();
         }
     };
 
@@ -26,7 +30,7 @@ export default function TreeView(props) {
         <Treebeard
             style={theme}
             data={props.data}
-            onToggle={handleToggle}
+            onToggle={onToggle}
         />
     );
 }
