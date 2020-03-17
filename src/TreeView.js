@@ -30,7 +30,7 @@ export default function TreeView(props) {
         <Treebeard
             style={theme}
             data={props.data}
-            onToggle={handleToggle}
+            onToggle={onToggle}
         />
     );
 }
