@@ -53,9 +53,6 @@ export default function treeModel(dataItems) {
                 child.name = `${key[0].toUpperCase()}${key.slice(1)}`;
                 child.data = dataItems[key];
 
-                // Fixup
-                delete child.data.name;
-
                 insertionPoint.splice(insertionPoint.length, 0, child);
 
                 console.log(`Created child object -- ${key}: item:`, child);
