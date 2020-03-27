@@ -21,4 +21,4 @@ function resetAllSelections() {
     headerDictionary.forEach((fnResetSelection) => fnResetSelection());
 }
 
-export const NodeContext = React.createContext({resetAllHeaderSelections: resetAllSelections});
+export const NodeContext = React.createContext({resetAllSelections});

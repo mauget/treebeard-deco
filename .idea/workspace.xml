@@ -4,8 +4,7 @@
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CustomHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customHeaderHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/customHeaderRegistry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customHeaderRegistry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/customHeaderRegistry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,14 +214,7 @@
       <workItem from="1584359515082" duration="4911000" />
       <workItem from="1584404444808" duration="1991000" />
       <workItem from="1584659061269" duration="14000" />
-      <workItem from="1585241682963" duration="20584000" />
-    </task>
-    <task id="LOCAL-00004" summary="Fix tests">
-      <created>1582339158769</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1582339158769</updated>
+      <workItem from="1585241682963" duration="20947000" />
     </task>
     <task id="LOCAL-00005" summary="travis cl">
       <created>1582340125899</created>
@@ -560,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585321816117</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Source formatting and comments">
+      <created>1585322250348</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1585322250348</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Husky init" />
     <MESSAGE value="Husky config" />
     <MESSAGE value="Husky config+" />
     <MESSAGE value="Husky config++" />
@@ -628,7 +626,8 @@
     <MESSAGE value="Remove console log; reformat source" />
     <MESSAGE value="Removed nested setTimeout" />
     <MESSAGE value="Renamed resetAllSelections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed resetAllSelections" />
+    <MESSAGE value="Source formatting and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Source formatting and comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="469" y="184" key="#ESLint" timestamp="1584034591296">
@@ -659,12 +658,12 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
-    <state x="844" y="160" key="CommitChangelistDialog2" timestamp="1585321815911">
+    <state x="780" y="160" key="CommitChangelistDialog2" timestamp="1585322250117">
       <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="842" y="160" key="CommitChangelistDialog2/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585264773953" />
     <state x="843" y="160" key="CommitChangelistDialog2/50.23.1630.1027@50.23.1630.1027" timestamp="1585244121076" />
-    <state x="844" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1585321815911" />
+    <state x="780" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1585322250117" />
     <state x="845" y="160" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1584404562526" />
     <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319689633" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
@@ -765,11 +764,12 @@
     <state width="1575" height="269" key="GridCell.Tab.2.right/54.23.1626.1027@54.23.1626.1027" timestamp="1583976137165" />
     <state width="1575" height="269" key="GridCell.Tab.2.right/56.23.1624.1027@56.23.1624.1027" timestamp="1584026560510" />
     <state width="1575" height="260" key="GridCell.Tab.2.right/61.23.1619.1027@61.23.1619.1027" timestamp="1582572371758" />
-    <state x="624" y="236" key="RollbackChangesDialog" timestamp="1585266415042">
-      <screen x="49" y="23" width="1631" height="1027" />
+    <state x="626" y="236" key="RollbackChangesDialog" timestamp="1585322449057">
+      <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="624" y="236" key="RollbackChangesDialog/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585266415042" />
     <state x="625" y="236" key="RollbackChangesDialog/50.23.1630.1027@50.23.1630.1027" timestamp="1585253903384" />
+    <state x="626" y="236" key="RollbackChangesDialog/52.23.1628.1027@52.23.1628.1027" timestamp="1585322449057" />
     <state x="628" y="236" key="RollbackChangesDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1584403390292" />
     <state x="629" y="236" key="RollbackChangesDialog/56.23.1624.1027@56.23.1624.1027" timestamp="1584035535306" />
     <state x="632" y="236" key="RollbackChangesDialog/61.23.1619.1027@61.23.1619.1027" timestamp="1582379783533" />
@@ -778,11 +778,11 @@
     </state>
     <state x="367" y="69" width="999" height="940" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1584040382435" />
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="462" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585321820302">
+    <state x="462" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585322252764">
       <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="461" y="258" key="Vcs.Push.Dialog.v2/50.23.1630.1027@50.23.1630.1027" timestamp="1585244123221" />
-    <state x="462" y="258" key="Vcs.Push.Dialog.v2/52.23.1628.1027@52.23.1628.1027" timestamp="1585321820302" />
+    <state x="462" y="258" key="Vcs.Push.Dialog.v2/52.23.1628.1027@52.23.1628.1027" timestamp="1585322252764" />
     <state x="464" y="258" key="Vcs.Push.Dialog.v2/54.23.1626.1027@54.23.1626.1027" timestamp="1584404577094" />
     <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319691898" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568749768" />
@@ -794,9 +794,10 @@
       <screen x="61" y="23" width="1619" height="1027" />
     </state>
     <state x="650" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582325343124" />
-    <state x="529" y="276" width="683" height="486" key="find.popup" timestamp="1584314149645">
-      <screen x="56" y="23" width="1624" height="1027" />
+    <state x="526" y="276" width="685" height="486" key="find.popup" timestamp="1585322519374">
+      <screen x="52" y="23" width="1628" height="1027" />
     </state>
+    <state x="526" y="276" width="685" height="486" key="find.popup/52.23.1628.1027@52.23.1628.1027" timestamp="1585322519374" />
     <state x="529" y="276" width="683" height="486" key="find.popup/56.23.1624.1027@56.23.1624.1027" timestamp="1584314149645" />
     <state x="744" y="382" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1584059397623">
       <screen x="56" y="23" width="1624" height="1027" />

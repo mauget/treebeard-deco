@@ -37,7 +37,7 @@ export default function CustomHeader(props) {
     const handleHeaderClick = ev => {
         ev.preventDefault();
 
-        context.resetAllHeaderSelections();
+        context.resetAllSelections();
 
         setSelection();
         setTimeout(() => nodeCallback(displayName), 0);
@@ -46,7 +46,7 @@ export default function CustomHeader(props) {
     const handleContextMenu = ev => {
         ev.preventDefault();
 
-        context.resetAllHeaderSelections();
+        context.resetAllSelections();
 
         setSelection();
         setTimeout(() => alert(`"${displayName}" right-clicked. Replace this by a context popup.`), 0);
