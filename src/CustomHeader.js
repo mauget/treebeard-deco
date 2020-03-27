@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import {NodeContext, registerHeaderDeselect} from "./customHeaderHelper";
+import {NodeContext, registerHeaderDeselect} from "./customHeaderRegistry";
 import nodeCallback from "./nodeCallback";
 
 const NotSelected = {

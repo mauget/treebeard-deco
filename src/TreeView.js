@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import {decorators, Treebeard} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
 import getCustomTheme from './getCustomTheme';
-import {resetHeaderRegistry} from "./customHeaderHelper";
+import {resetHeaderRegistry} from "./customHeaderRegistry";
 
 export default function TreeView(props) {
 
