@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customHeaderHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/customHeaderHelper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,14 +213,7 @@
       <workItem from="1584359515082" duration="4911000" />
       <workItem from="1584404444808" duration="1991000" />
       <workItem from="1584659061269" duration="14000" />
-      <workItem from="1585241682963" duration="19928000" />
-    </task>
-    <task id="LOCAL-00002" summary="Edit README.md about install and start specifics">
-      <created>1582338592602</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1582338592602</updated>
+      <workItem from="1585241682963" duration="20094000" />
     </task>
     <task id="LOCAL-00003" summary="Fix tests">
       <created>1582339127509</created>
@@ -558,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585321246509</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Removed nested setTimeout">
+      <created>1585321493781</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1585321493781</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +601,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed unit test title" />
     <MESSAGE value="Tweaked unit tests for lint" />
     <MESSAGE value="Husky init" />
     <MESSAGE value="Husky config" />
@@ -626,7 +625,8 @@
     <MESSAGE value="Thin blue border on selection box" />
     <MESSAGE value="Employs useContext to reset all tree header selections" />
     <MESSAGE value="Remove console log; reformat source" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove console log; reformat source" />
+    <MESSAGE value="Removed nested setTimeout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed nested setTimeout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="469" y="184" key="#ESLint" timestamp="1584034591296">
@@ -657,12 +657,12 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
-    <state x="844" y="160" key="CommitChangelistDialog2" timestamp="1585321246309">
+    <state x="844" y="160" key="CommitChangelistDialog2" timestamp="1585321493581">
       <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="842" y="160" key="CommitChangelistDialog2/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585264773953" />
     <state x="843" y="160" key="CommitChangelistDialog2/50.23.1630.1027@50.23.1630.1027" timestamp="1585244121076" />
-    <state x="844" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1585321246309" />
+    <state x="844" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1585321493581" />
     <state x="845" y="160" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1584404562526" />
     <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319689633" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
@@ -776,11 +776,11 @@
     </state>
     <state x="367" y="69" width="999" height="940" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1584040382435" />
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="462" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585321249300">
+    <state x="462" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585321495948">
       <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="461" y="258" key="Vcs.Push.Dialog.v2/50.23.1630.1027@50.23.1630.1027" timestamp="1585244123221" />
-    <state x="462" y="258" key="Vcs.Push.Dialog.v2/52.23.1628.1027@52.23.1628.1027" timestamp="1585321249300" />
+    <state x="462" y="258" key="Vcs.Push.Dialog.v2/52.23.1628.1027@52.23.1628.1027" timestamp="1585321495948" />
     <state x="464" y="258" key="Vcs.Push.Dialog.v2/54.23.1626.1027@54.23.1626.1027" timestamp="1584404577094" />
     <state x="465" y="258" key="Vcs.Push.Dialog.v2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319691898" />
     <state x="469" y="258" key="Vcs.Push.Dialog.v2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568749768" />
