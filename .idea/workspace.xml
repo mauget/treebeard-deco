@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customHeaderRegistry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/customHeaderRegistry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomHeader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,14 +214,7 @@
       <workItem from="1584404444808" duration="1991000" />
       <workItem from="1584659061269" duration="14000" />
       <workItem from="1585241682963" duration="21212000" />
-      <workItem from="1585332722668" duration="2283000" />
-    </task>
-    <task id="LOCAL-00007" summary="Cursor point on caret">
-      <created>1582380160905</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1582380160905</updated>
+      <workItem from="1585332722668" duration="3146000" />
     </task>
     <task id="LOCAL-00008" summary="Green de-lint">
       <created>1582423572967</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585333760656</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Edits on description">
+      <created>1585337821793</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1585337821793</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Husky config++" />
     <MESSAGE value="Husky config+++" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="eslint script added" />
@@ -627,7 +626,8 @@
     <MESSAGE value="Source formatting and comments" />
     <MESSAGE value="Renamed resetAllHeaderSelections to resetAllSelections" />
     <MESSAGE value="Edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edits" />
+    <MESSAGE value="Edits on description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edits on description" />
   </component>
   <component name="WindowStateProjectService">
     <state x="469" y="184" key="#ESLint" timestamp="1584034591296">
@@ -658,19 +658,21 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
-    <state x="843" y="160" key="CommitChangelistDialog2" timestamp="1585333760398">
-      <screen x="50" y="23" width="1630" height="1027" />
+    <state x="842" y="160" key="CommitChangelistDialog2" timestamp="1585337821581">
+      <screen x="49" y="23" width="1631" height="1027" />
     </state>
     <state x="842" y="160" key="CommitChangelistDialog2/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585264773953" />
+    <state x="842" y="160" key="CommitChangelistDialog2/49.23.1631.1027@49.23.1631.1027" timestamp="1585337821581" />
     <state x="843" y="160" key="CommitChangelistDialog2/50.23.1630.1027@50.23.1630.1027" timestamp="1585333760398" />
     <state x="780" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1585322653775" />
     <state x="845" y="160" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1584404562526" />
     <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319689633" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
-    <state x="210" y="97" width="1304" height="821" key="DiffContextDialog" timestamp="1585321241127">
-      <screen x="52" y="23" width="1628" height="1027" />
+    <state x="207" y="97" width="1304" height="821" key="DiffContextDialog" timestamp="1585337817477">
+      <screen x="49" y="23" width="1631" height="1027" />
     </state>
     <state x="207" y="97" key="DiffContextDialog/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585266412736" />
+    <state x="207" y="97" key="DiffContextDialog/49.23.1631.1027@49.23.1631.1027" timestamp="1585337817477" />
     <state x="208" y="97" width="1304" height="821" key="DiffContextDialog/50.23.1630.1027@50.23.1630.1027" timestamp="1585253901250" />
     <state x="210" y="97" key="DiffContextDialog/52.23.1628.1027@52.23.1628.1027" timestamp="1585321241127" />
     <state x="212" y="97" width="1300" height="821" key="DiffContextDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1584403388968" />
@@ -778,9 +780,10 @@
     </state>
     <state x="367" y="69" width="999" height="940" key="SettingsEditor/56.23.1624.1027@56.23.1624.1027" timestamp="1584040382435" />
     <state x="371" y="158" key="SettingsEditor/61.23.1619.1027@61.23.1619.1027" timestamp="1582324388443" />
-    <state x="461" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585333767717">
-      <screen x="50" y="23" width="1630" height="1027" />
+    <state x="460" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585337824004">
+      <screen x="49" y="23" width="1631" height="1027" />
     </state>
+    <state x="460" y="258" key="Vcs.Push.Dialog.v2/49.23.1631.1027@49.23.1631.1027" timestamp="1585337824004" />
     <state x="461" y="258" key="Vcs.Push.Dialog.v2/50.23.1630.1027@50.23.1630.1027" timestamp="1585333767717" />
     <state x="462" y="258" key="Vcs.Push.Dialog.v2/52.23.1628.1027@52.23.1628.1027" timestamp="1585322656099" />
     <state x="464" y="258" key="Vcs.Push.Dialog.v2/54.23.1626.1027@54.23.1626.1027" timestamp="1584404577094" />

@@ -33,22 +33,19 @@ export default function CustomHeader(props) {
         }, 0)
     }, []);
 
-
-    const handleHeaderClick = ev => {
+    const doEventPreamble = (ev) => {
         ev.preventDefault();
-
         context.resetAllSelections();
-
         setSelection();
+    };
+
+    const onHeaderClick = ev => {
+        doEventPreamble(ev);
         setTimeout(() => nodeCallback(displayName), 0);
     };
 
-    const handleContextMenu = ev => {
-        ev.preventDefault();
-
-        context.resetAllSelections();
-
-        setSelection();
+    const onContextMenu = ev => {
+        doEventPreamble(ev);
         setTimeout(() => alert(`"${displayName}" right-clicked. Replace this by a context popup.`), 0);
     };
 
@@ -56,8 +53,8 @@ export default function CustomHeader(props) {
         <div
             className={"App-header"}
             style={headerStyle}
-            onClick={handleHeaderClick}
-            onContextMenu={handleContextMenu}
+            onClick={onHeaderClick}
+            onContextMenu={onContextMenu}
         >
 
             <div
