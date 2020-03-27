@@ -1,7 +1,7 @@
 /**
  * This module helps maintain tree header visual selection. We want no more than one header selected at a time.
  * The header class registers its selection reset state function here. Whenever a header decides to select,
- * it calls resetAllSelections(), that is exposed through NodeContext that is uses via useContext hook.
+ * it calls resetAllSelections() exposed through NodeContext via useContext hook.
  *
  * Expected client modules are CustomHeader and TreeView
  */
