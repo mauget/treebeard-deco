@@ -2,13 +2,17 @@ import React, {useState, useEffect, useContext} from "react";
 import {NodeContext, registerHeaderDeselect} from "./customHeaderHelper";
 import nodeCallback from "./nodeCallback";
 
-const NotSelected = {backgroundColor: "#282c34", color: "#d0d0d0"};
+const NotSelected = {
+    backgroundColor: "#282c34",
+    color: "#d0d0d0",
+};
+
 const Selected = {
     backgroundColor: "#c0c0c0",
     color: "black",
-    border: "1px solid blue",
+    border: "2px solid blue",
     paddingLeft: "2px",
-    paddingRight: "2px"
+    paddingRight: "2px",
 };
 
 export default function CustomHeader(props) {
@@ -24,8 +28,6 @@ export default function CustomHeader(props) {
     const setSelection = () => setSelected(Selected);
 
     useEffect(() => {
-        // console.log('Triggered registerHeaderDeselect');
-
         setTimeout(() => {
             registerHeaderDeselect(resetSelection);
         }, 0)
