@@ -41,7 +41,6 @@ export default function CustomHeader(props) {
 
         setSelection();
         setTimeout(() => nodeCallback(displayName), 0);
-
     };
 
     const handleContextMenu = ev => {
@@ -49,11 +48,8 @@ export default function CustomHeader(props) {
 
         context.resetAllHeaderSelections();
 
-        setTimeout(() => {
-            setSelection();
-            setTimeout(() => alert(`"${displayName}" right-clicked. Replace this by a context popup.`), 0);
-        }, 0);
-
+        setSelection();
+        setTimeout(() => alert(`"${displayName}" right-clicked. Replace this by a context popup.`), 0);
     };
 
     return (
