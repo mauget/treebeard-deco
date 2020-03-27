@@ -9,13 +9,13 @@ export default function treeModel(dataItems) {
         name: 'Workspace',
         data: {},
         toggled: true,
-        active: true,
+        // active: false,
         children: [
             {
                 name: 'Scenarios',
                 data: {},
                 toggled: true,
-                active: true,
+                // active: false,
                 children: [
                     //* Programmatically add dynamic children here */
                 ],
@@ -23,20 +23,23 @@ export default function treeModel(dataItems) {
             {
                 name: 'Base Layers',
                 data: {},
-                active: true,
+                // active: false,
                 toggled: false,
                 children: [
                     {
                         name: 'Roads',
                         data: {},
+                        // active: false,
                     },
                     {
                         name: 'Test 1',
                         data: {},
+                        // active: false,
                     },
                     {
                         name: 'Test 2',
                         data: {},
+                        // active: false,
                     }
                 ],
             },
@@ -52,10 +55,11 @@ export default function treeModel(dataItems) {
                 const child = {};
                 child.name = `${key[0].toUpperCase()}${key.slice(1)}`;
                 child.data = dataItems[key];
+                child.active = false;
 
                 insertionPoint.splice(insertionPoint.length, 0, child);
 
-                console.log(`Created child object -- ${key}: item:`, child);
+                // console.log(`Created child object -- ${key}: item:`, child);
             } else {
                 console.log('ERROR. Unexpected falsey key')
             }

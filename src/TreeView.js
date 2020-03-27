@@ -7,8 +7,10 @@ import PropTypes from 'prop-types';
 import {decorators, Treebeard} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
 import getCustomTheme from './getCustomTheme';
+import {resetHeaderRegistry} from "./customHeaderHelper";
 
 export default function TreeView(props) {
+
 
     const [theme] = useState(getCustomTheme());
     const [viewState, setViewState] = useState(0);
@@ -17,6 +19,7 @@ export default function TreeView(props) {
         setViewState(viewState + 1);
     };
 
+    resetHeaderRegistry();
     decorators.Header = CustomHeader;
 
     const onToggle = (node, toggled) => {
@@ -38,3 +41,4 @@ export default function TreeView(props) {
 TreeView.propTypes = {
     data: PropTypes.object.isRequired
 };
+
