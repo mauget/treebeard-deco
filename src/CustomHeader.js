@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from "react";
 import {NodeContext, registerHeaderDeselect} from "./customHeaderRegistry";
-import nodeCallback from "./nodeCallback";
+import {ContextModel} from "./ContextModel";
 
 const NotSelected = {
     backgroundColor: "#282c34",
@@ -33,6 +33,9 @@ export default function CustomHeader(props) {
         }, 0)
     }, []);
 
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const toggleContextModal = () => setIsDialogOpen(!isDialogOpen);
+
     const doEventPreamble = (ev) => {
         ev.preventDefault();
         context.resetAllSelections();
@@ -41,28 +44,21 @@ export default function CustomHeader(props) {
 
     const onHeaderClick = ev => {
         doEventPreamble(ev);
-        setTimeout(() => nodeCallback(displayName), 0);
     };
 
     const onContextMenu = ev => {
         doEventPreamble(ev);
-        setTimeout(() => alert(`"${displayName}" right-clicked. Replace this by a context popup.`), 0);
+        toggleContextModal();
     };
 
-    return (
-        <div
-            className={"App-header"}
-            style={headerStyle}
-            onClick={onHeaderClick}
-            onContextMenu={onContextMenu}
-        >
 
-            <div
-                style={selected}
-                className={"App-header-name"}
-            >
-                {displayName}
+    return (
+            <div className={"App-header"} style={headerStyle} onClick={onHeaderClick} onContextMenu={onContextMenu}>
+                <div style={selected} className={"App-header-name"}>
+                    {displayName}
+                </div>
+
+                <ContextModel show={isDialogOpen} onClose={toggleContextModal}/>
             </div>
-        </div>
     );
 };
