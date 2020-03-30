@@ -36,29 +36,26 @@ export default function CustomHeader(props) {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const toggleContextModal = () => setIsDialogOpen(!isDialogOpen);
 
-    const doEventPreamble = (ev) => {
+    const onHeaderClick = (ev) => {
         ev.preventDefault();
+        ev.stopPropagation();
         context.resetAllSelections();
         setSelection();
     };
 
-    const onHeaderClick = ev => {
-        doEventPreamble(ev);
-    };
-
     const onContextMenu = ev => {
-        doEventPreamble(ev);
+        onHeaderClick(ev);
         toggleContextModal();
     };
 
-
     return (
-            <div className={"App-header"} style={headerStyle} onClick={onHeaderClick} onContextMenu={onContextMenu}>
-                <div style={selected} className={"App-header-name"}>
+        <>
+            <div className={"App-header"} style={headerStyle}>
+                <div style={selected} className={"App-header-name"} onClick={onHeaderClick} onContextMenu={onContextMenu}>
                     {displayName}
                 </div>
-
-                <ContextModel show={isDialogOpen} onClose={toggleContextModal}/>
             </div>
+            <ContextModel show={isDialogOpen} onClose={toggleContextModal}/>
+        </>
     );
 };
