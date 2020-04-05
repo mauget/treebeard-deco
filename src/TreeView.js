@@ -22,18 +22,31 @@ export default function TreeView(props) {
     resetHeaderRegistry();
     decorators.Header = CustomHeader;
 
-    const onToggle = (node, toggled) => {
+    const onToggle2 = (node, toggled) => {
         if (node.children) {
             node.toggled = toggled;
             repaint();
         }
     };
 
+ /*   const [cursor, setCursor] = useState({});
+
+    const onToggle = (node, toggled) => {
+        if (cursor) {
+            cursor.active = false;
+        }
+        node.active = true;
+        if (node.children) {
+            node.toggled = toggled;
+        }
+        setCursor(node);
+    };*/
+
     return (
         <Treebeard
             style={theme}
             data={props.data}
-            onToggle={onToggle}
+            onToggle={onToggle2}
         />
     );
 }

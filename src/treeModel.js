@@ -15,7 +15,7 @@ export default function treeModel(dataItems) {
                 name: 'Scenarios',
                 data: {},
                 toggled: true,
-                // active: false,
+                active: false,
                 children: [
                     //* Programmatically add dynamic children here */
                 ],
@@ -23,23 +23,23 @@ export default function treeModel(dataItems) {
             {
                 name: 'Base Layers',
                 data: {},
-                // active: false,
+                active: false,
                 toggled: false,
                 children: [
                     {
                         name: 'Roads',
                         data: {},
-                        // active: false,
+                        active: false,
                     },
                     {
                         name: 'Test 1',
                         data: {},
-                        // active: false,
+                        active: false,
                     },
                     {
                         name: 'Test 2',
                         data: {},
-                        // active: false,
+                        active: false,
                     }
                 ],
             },
@@ -59,6 +59,7 @@ export default function treeModel(dataItems) {
                 const aStrike = {};
                 aStrike.name = `~ ${s.name}`;
                 aStrike.data = s;
+                aStrike.active = false;
 
                 treeParent.children.push(aStrike);
             });

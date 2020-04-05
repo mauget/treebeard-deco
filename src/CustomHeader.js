@@ -39,12 +39,15 @@ export default function CustomHeader(props) {
     const onHeaderClick = (ev) => {
         ev.preventDefault();
         ev.stopPropagation();
+
         context.resetAllSelections();
         setSelection();
     };
 
     const onContextMenu = ev => {
-        onHeaderClick(ev);
+        ev.preventDefault();
+        ev.stopPropagation();
+
         toggleContextModal();
     };
 
