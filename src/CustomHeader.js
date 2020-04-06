@@ -12,13 +12,11 @@ export default function CustomHeader(props) {
 
     const onHeaderClick = (ev) => {
         ev.preventDefault();
-        // Note: allow propagation so toggle can operate
 
         console.log('clicked node', node);
     };
 
     const onContextMenu = (ev) => {
-        ev.stopPropagation();
         ev.preventDefault();
 
         togglePopup();
