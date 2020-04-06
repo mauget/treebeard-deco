@@ -12,22 +12,22 @@ export default function CustomHeader(props) {
 
     const onHeaderClick = (ev) => {
         ev.preventDefault();
-        // Note: allow propagation
+        // Note: allow propagation so toggle can operate
 
         console.log('clicked node', node);
     };
 
     const onContextMenu = (ev) => {
-        ev.preventDefault();
         ev.stopPropagation();
+        ev.preventDefault();
 
         togglePopup();
     };
 
     return (
         <>
-            <div className={"App-header"} style={headerStyle}>
-                <div className={"App-header-name"} onClick={onHeaderClick} onContextMenu={onContextMenu}>
+            <div style={headerStyle}>
+                <div onClick={onHeaderClick} onContextMenu={onContextMenu}>
                     {displayName}
                 </div>
             </div>

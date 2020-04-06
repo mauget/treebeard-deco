@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 // noinspection ES6CheckImport
 import {decorators, Treebeard} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
-import getCustomTheme from './getCustomTheme';
+import customTheme from './customTheme';
 
 export default function TreeView(props) {
 
-    const [theme] = useState(getCustomTheme());
+    const [theme] = useState(customTheme());
     const [data, setData] = useState(props.data);
     const [cursor, setCursor] = useState({active: false});
 
