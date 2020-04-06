@@ -9,6 +9,8 @@ export default function getCustomTheme() {
         color: "white",
         backgroundColor: "#282c34"
     };
+
+    // Highlight active linke
     _theme.tree.node.activeLink = {
         backgroundColor: "#c0c0c0",
         color: "black",

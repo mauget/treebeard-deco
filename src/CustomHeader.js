@@ -8,17 +8,20 @@ export default function CustomHeader(props) {
     const headerStyle = style.base;
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
-    const toggleContextModal = () => setIsDialogOpen(!isDialogOpen);
+    const togglePopup = () => setIsDialogOpen(!isDialogOpen);
 
     const onHeaderClick = (ev) => {
-        console.log('clicked node',node);
+        ev.preventDefault();
+        // Note: allow propagation
+
+        console.log('clicked node', node);
     };
 
     const onContextMenu = (ev) => {
         ev.preventDefault();
         ev.stopPropagation();
 
-        toggleContextModal();
+        togglePopup();
     };
 
     return (
@@ -28,7 +31,7 @@ export default function CustomHeader(props) {
                     {displayName}
                 </div>
             </div>
-            <ContextModel show={isDialogOpen} onClose={toggleContextModal}/>
+            <ContextModel show={isDialogOpen} onClose={togglePopup}/>
         </>
     );
 };
