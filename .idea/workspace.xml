@@ -153,12 +153,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="Jest.main app heading" />
       <item itemvalue="Jest.renders without crashing" />
       <item itemvalue="Jest.treeModel(getScenarios()) creates expected Treebeard data" />
-      <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="npm.lint" />
       <item itemvalue="npm.npm start" />
+      <item itemvalue="npm.lint" />
       <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
@@ -658,13 +658,13 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
-    <state x="845" y="160" key="CommitChangelistDialog2" timestamp="1585527926762">
-      <screen x="54" y="23" width="1626" height="1027" />
+    <state x="780" y="160" key="CommitChangelistDialog2" timestamp="1586138495447">
+      <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="842" y="160" key="CommitChangelistDialog2/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585264773953" />
     <state x="842" y="160" key="CommitChangelistDialog2/49.23.1631.1027@49.23.1631.1027" timestamp="1585337821581" />
     <state x="843" y="160" key="CommitChangelistDialog2/50.23.1630.1027@50.23.1630.1027" timestamp="1585333760398" />
-    <state x="780" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1585447336523" />
+    <state x="780" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1586138495447" />
     <state x="845" y="160" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1585527926762" />
     <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319689633" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
@@ -803,6 +803,10 @@
     </state>
     <state x="526" y="276" width="685" height="486" key="find.popup/52.23.1628.1027@52.23.1628.1027" timestamp="1585322519374" />
     <state x="529" y="276" width="683" height="486" key="find.popup/56.23.1624.1027@56.23.1624.1027" timestamp="1584314149645" />
+    <state x="601" y="334" key="git4idea.merge.GitMergeDialog" timestamp="1586138526356">
+      <screen x="52" y="23" width="1628" height="1027" />
+    </state>
+    <state x="601" y="334" key="git4idea.merge.GitMergeDialog/52.23.1628.1027@52.23.1628.1027" timestamp="1586138526356" />
     <state x="744" y="382" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1584059397623">
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
