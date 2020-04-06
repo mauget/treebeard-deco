@@ -9,5 +9,12 @@ export default function getCustomTheme() {
         color: "white",
         backgroundColor: "#282c34"
     };
+    _theme.tree.node.activeLink = {
+        backgroundColor: "#c0c0c0",
+        color: "black",
+        border: "2px solid blue",
+        paddingLeft: "2px",
+        paddingRight: "2px",
+    };
     return _theme;
 }

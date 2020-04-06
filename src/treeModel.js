@@ -9,12 +9,12 @@ export default function treeModel(dataItems) {
         name: 'Workspace',
         data: {},
         toggled: true,
-        // active: false,
+        active: false,
         children: [
             {
                 name: 'Scenarios',
                 data: {},
-                toggled: true,
+                toggled: false,
                 active: false,
                 children: [
                     //* Programmatically add dynamic children here */

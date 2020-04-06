@@ -1,4 +1,4 @@
-// Lifted flow from https://codesandbox.io/s/q5ae9vg0
+// Ref flow from https://codesandbox.io/s/q5ae9vg0
 // Lou Mauget, 2020-02-20 (lotta 0's and 2's)
 
 import React, {useState} from 'react';
@@ -7,46 +7,34 @@ import PropTypes from 'prop-types';
 import {decorators, Treebeard} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
 import getCustomTheme from './getCustomTheme';
-import {resetHeaderRegistry} from "./customHeaderRegistry";
 
 export default function TreeView(props) {
 
-
     const [theme] = useState(getCustomTheme());
-    const [viewState, setViewState] = useState(0);
+    const [data, setData] = useState(props.data);
+    const [cursor, setCursor] = useState({active: false});
 
-    const repaint = () => {
-        setViewState(viewState + 1);
-    };
-
-    resetHeaderRegistry();
     decorators.Header = CustomHeader;
-
-    const onToggle2 = (node, toggled) => {
-        if (node.children) {
-            node.toggled = toggled;
-            repaint();
-        }
-    };
-
- /*   const [cursor, setCursor] = useState({});
 
     const onToggle = (node, toggled) => {
         if (cursor) {
+            // Remove previous node highlight
             cursor.active = false;
         }
-        node.active = true;
-        if (node.children) {
-            node.toggled = toggled;
-        }
+        // Set current node highlight
+        node.active = !node.active;
+        node.toggled = toggled;
         setCursor(node);
-    };*/
+
+        setData({...data});
+    };
 
     return (
         <Treebeard
+            decorators={decorators}
             style={theme}
-            data={props.data}
-            onToggle={onToggle2}
+            data={data}
+            onToggle={onToggle}
         />
     );
 }
@@ -54,4 +42,3 @@ export default function TreeView(props) {
 TreeView.propTypes = {
     data: PropTypes.object.isRequired
 };
-
