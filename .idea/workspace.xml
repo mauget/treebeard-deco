@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="Added second-level tree nodes: &quot;strikes&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/treeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.js" afterDir="false" />
-    </list>
+    <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="Added second-level tree nodes: &quot;strikes&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,12 +153,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="Jest.main app heading" />
       <item itemvalue="Jest.renders without crashing" />
       <item itemvalue="Jest.treeModel(getScenarios()) creates expected Treebeard data" />
-      <item itemvalue="npm.npm start" />
+      <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="npm.lint" />
+      <item itemvalue="npm.npm start" />
       <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
