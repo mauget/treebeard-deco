@@ -3,29 +3,23 @@ import './App.css';
 import TreeView from "./TreeView";
 import treeModel from "./treeModel";
 import getScenarios from "./getScenarios";
+import {Col, Container, Row} from "react-bootstrap";
 
 function App() {
 
-    const reverse = (PassedComponent) =>
-        ({ children, ...props }) =>
-            <PassedComponent {...props}>
-                {children.split("").reverse().join("")}
-            </PassedComponent>;
-
-    const name = (props) => <span>{props.children}</span>;
-
-    // HOC
-    const ReversedName = reverse(name);
-
     return <div className="App">
-        &lt;ReversedName&gt;Hello&lt;/ReversedName&gt; evaluates to&nbsp;
-        &quot;
-        <ReversedName>Mauget</ReversedName>
-        &quot;
-
-        <h1>Tree View via Decorators</h1>
-        <hr/>
-        <TreeView data={{...treeModel(getScenarios())}}/>
+        <Container fluid={"sm"}>
+            <Row>
+                <Col>
+                    <h1>Tree View via Decorators</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col sm={3}>
+                    <TreeView data={{...treeModel(getScenarios())}}/>
+                </Col>
+            </Row>
+        </Container>
     </div>;
 }
 
