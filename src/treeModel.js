@@ -9,13 +9,13 @@ export default function treeModel(dataItems) {
         name: 'Workspace',
         data: {},
         toggled: true,
-        active: false,
+
         children: [
             {
                 name: 'Scenarios',
                 data: {},
                 toggled: false,
-                active: false,
+
                 children: [
                     //* Programmatically add dynamic children here */
                 ],
@@ -23,23 +23,23 @@ export default function treeModel(dataItems) {
             {
                 name: 'Base Layers',
                 data: {},
-                active: false,
+
                 toggled: false,
                 children: [
                     {
                         name: 'Roads',
                         data: {},
-                        active: false,
+
                     },
                     {
                         name: 'Test 1',
                         data: {},
-                        active: false,
+
                     },
                     {
                         name: 'Test 2',
                         data: {},
-                        active: false,
+
                     }
                 ],
             },

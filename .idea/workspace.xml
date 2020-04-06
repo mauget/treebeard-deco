@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872e4931-ce97-45b3-b476-d542186e6338" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getCustomTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/customTheme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/treeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/treeModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,14 +217,7 @@
       <workItem from="1585354691675" duration="420000" />
       <workItem from="1585407999067" duration="15469000" />
       <workItem from="1585523581511" duration="3230000" />
-      <workItem from="1586115151126" duration="19407000" />
-    </task>
-    <task id="LOCAL-00014" summary="Highighted node on mouseover">
-      <created>1582637535794</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1582637535794</updated>
+      <workItem from="1586115151126" duration="19537000" />
     </task>
     <task id="LOCAL-00015" summary="Added screen capture to README.md">
       <created>1582657522360</created>
@@ -566,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586133994644</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Highlight++">
+      <created>1586137995683</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1586137995683</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Import list detail data" />
     <MESSAGE value="Reword popups" />
     <MESSAGE value="Sort children" />
     <MESSAGE value="Handle varying case of name 1st char: sort children" />
@@ -634,7 +629,8 @@
     <MESSAGE value="Sync" />
     <MESSAGE value="Highlight clicked node, unhighlight others" />
     <MESSAGE value="Cleanup a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup a bit" />
+    <MESSAGE value="Highlight++" />
+    <option name="LAST_COMMIT_MESSAGE" value="Highlight++" />
   </component>
   <component name="WindowStateProjectService">
     <state x="469" y="184" key="#ESLint" timestamp="1584034591296">
@@ -665,13 +661,13 @@
       <screen x="56" y="23" width="1624" height="1027" />
     </state>
     <state x="614" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/56.23.1624.1027@56.23.1624.1027" timestamp="1584046777410" />
-    <state x="780" y="160" key="CommitChangelistDialog2" timestamp="1586133994441">
+    <state x="780" y="160" key="CommitChangelistDialog2" timestamp="1586137995472">
       <screen x="52" y="23" width="1628" height="1027" />
     </state>
     <state x="842" y="160" key="CommitChangelistDialog2/-111.-1057.1920.1057/49.23.1631.1027@49.23.1631.1027" timestamp="1585264773953" />
     <state x="842" y="160" key="CommitChangelistDialog2/49.23.1631.1027@49.23.1631.1027" timestamp="1585337821581" />
     <state x="843" y="160" key="CommitChangelistDialog2/50.23.1630.1027@50.23.1630.1027" timestamp="1585333760398" />
-    <state x="780" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1586133994441" />
+    <state x="780" y="160" key="CommitChangelistDialog2/52.23.1628.1027@52.23.1628.1027" timestamp="1586137995472" />
     <state x="845" y="160" key="CommitChangelistDialog2/54.23.1626.1027@54.23.1626.1027" timestamp="1585527926762" />
     <state x="446" y="121" key="CommitChangelistDialog2/56.23.1624.1027@56.23.1624.1027" timestamp="1584319689633" />
     <state x="450" y="121" key="CommitChangelistDialog2/61.23.1619.1027@61.23.1619.1027" timestamp="1582568735769" />
