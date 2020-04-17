@@ -32,24 +32,19 @@ export default function TreeView(props) {
         setData({...data});
     };
 
-    const [hasData, setHasData] = useState(true);
+    const [hasData, setHasData] = useState(false);
     const toggleData = () => {
-        let rawData;
-        if (hasData){
-            rawData = null;
-        } else {
-            rawData = getScenarios(data);
-        }
+        const rawData = hasData ? null : getScenarios(data);
         setData(treeModel(rawData));
         setHasData(!hasData);
     };
 
-    console.log(data);
+    console.log('raw data', data);
 
     return (
         <>
             <div>
-                <Button onClick={toggleData}>{`${hasData ? "Clear" : "Load"} Tree`}</Button>
+                <Button onClick={toggleData}>{`${hasData ? "Clear" : "Load"} Scenarios`}</Button>
             </div>
             <br/>
             <Treebeard

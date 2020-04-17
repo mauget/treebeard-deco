@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import TreeView from "./TreeView";
 import treeModel from "./treeModel";
-import getScenarios from "./getScenarios";
 import {Col, Container, Row} from "react-bootstrap";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
             </Row>
             <Row>
                 <Col sm={3}>
-                    <TreeView data={{...treeModel(getScenarios())}}/>
+                    <TreeView data={{...treeModel(null)}}/>
                 </Col>
             </Row>
         </Container>
