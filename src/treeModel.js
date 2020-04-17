@@ -3,8 +3,8 @@
  * We sort inserted items sorted by names.
  */
 
-export default function treeModel(dataItems) {
-
+export default function treeModel(dataArg) {
+    const dataItems = dataArg || {};
     const tbData = {
         name: 'Workspace',
         data: {},
@@ -14,7 +14,7 @@ export default function treeModel(dataItems) {
             {
                 name: 'Scenarios',
                 data: {},
-                toggled: false,
+                toggled: true,
 
                 children: [
                     //* Programmatically add dynamic children here */
@@ -24,7 +24,7 @@ export default function treeModel(dataItems) {
                 name: 'Base Layers',
                 data: {},
 
-                toggled: false,
+                toggled: true,
                 children: [
                     {
                         name: 'Roads',

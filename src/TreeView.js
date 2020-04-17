@@ -7,9 +7,11 @@ import PropTypes from 'prop-types';
 import {decorators, Treebeard} from 'react-treebeard';
 import CustomHeader from './CustomHeader';
 import customTheme from './customTheme';
+import Button from "react-bootstrap/Button";
+import treeModel from "./treeModel";
+import getScenarios from "./getScenarios";
 
 export default function TreeView(props) {
-
     const [theme] = useState(customTheme());
     const [data, setData] = useState(props.data);
     const [cursor, setCursor] = useState({active: false});
@@ -18,7 +20,7 @@ export default function TreeView(props) {
 
     const onToggle = (node, toggled) => {
         if (cursor) {
-            // Remove previous node highlight
+            // Remove previous node highlight if any
             cursor.active = false;
         }
         // Set current node highlight
@@ -26,16 +28,37 @@ export default function TreeView(props) {
         node.toggled = toggled;
         setCursor(node);
 
+        // Repaint tree
         setData({...data});
     };
 
+    const [hasData, setHasData] = useState(true);
+    const toggleData = () => {
+        let rawData;
+        if (hasData){
+            rawData = null;
+        } else {
+            rawData = getScenarios(data);
+        }
+        setData(treeModel(rawData));
+        setHasData(!hasData);
+    };
+
+    console.log(data);
+
     return (
-        <Treebeard
-            decorators={decorators}
-            style={theme}
-            data={data}
-            onToggle={onToggle}
-        />
+        <>
+            <div>
+                <Button onClick={toggleData}>{`${hasData ? "Clear" : "Load"} Tree`}</Button>
+            </div>
+            <br/>
+            <Treebeard
+                decorators={decorators}
+                style={theme}
+                data={data}
+                onToggle={onToggle}
+            />
+        </>
     );
 }
 
