@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import TreeView from "./TreeView";
-import treeModel from "./treeModel";
 import {Col, Container, Row} from "react-bootstrap";
+import {connect} from "react-redux";
 
-function App() {
+function ConnectedApp(props) {
+    console.log('props', props);
+    const {data} = {...props};
+
+    // Used for logging only
+    useEffect(() => {
+        console.log('useEffect data', data);
+    }, [data]);
 
     return <div className="App">
         <Container fluid={"sm"}>
@@ -15,11 +22,14 @@ function App() {
             </Row>
             <Row>
                 <Col sm={3}>
-                    <TreeView data={{...treeModel(null)}}/>
+                    <TreeView data={data}/>
                 </Col>
             </Row>
         </Container>
     </div>;
 }
 
+const mapStateToProps = (state) => ({data: state.data});
+
+const App = connect(mapStateToProps)(ConnectedApp);
 export default App;
