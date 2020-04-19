@@ -1,6 +1,6 @@
 import {REFRESH_TREE_DATA, RESET_TREE_DATA} from "./actions";
 
-export default function reducer(state = {data: null}, action) {
+export default function reducers(state = {data: null}, action) {
     switch (action.type) {
         case RESET_TREE_DATA:
             return {

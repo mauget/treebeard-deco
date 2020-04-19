@@ -6,14 +6,14 @@ import {composeWithDevTools} from "redux-devtools-extension";
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import reducer from "./reducer";
+import reducers from "./reducers";
 import thunk from 'redux-thunk';
 import * as serviceWorker from './serviceWorker';
 
 const composeEnhancers = composeWithDevTools({
     // options like actionSanitizer, stateSanitizer
 });
-const store = createStore(reducer, {data: null}, composeEnhancers(
+const store = createStore(reducers, {data: null}, composeEnhancers(
     applyMiddleware(thunk),
     // other store enhancers, if any
 ));
