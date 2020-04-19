@@ -1,11 +1,6 @@
-import getScenarios from "./getScenarios";
 import {REFRESH_TREE_DATA, RESET_TREE_DATA} from "./actions";
 
-export const initialState = {
-    data: null
-};
-
-export default function reducer(state = initialState, action) {
+export default function reducer(state = {data: null}, action) {
     switch (action.type) {
         case RESET_TREE_DATA:
             return {
@@ -13,7 +8,7 @@ export default function reducer(state = initialState, action) {
             };
         case REFRESH_TREE_DATA:
             return {
-                data: getScenarios()
+                data: action.payload
             };
         default:
             return state;

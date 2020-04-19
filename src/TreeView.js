@@ -9,7 +9,7 @@ import CustomHeader from './CustomHeader';
 import customTheme from './customTheme';
 import Button from "react-bootstrap/Button";
 import {connect} from "react-redux";
-import {refreshTreeData, resetTreeData} from "./actions";
+import {refreshTreeDataAsync, resetTreeData} from "./actions";
 import treeModel from "./treeModel";
 
 function ConnectedTreeView(props) {
@@ -20,12 +20,13 @@ function ConnectedTreeView(props) {
     const [localTreeData, setLocalTreeData] = useState({...treeModel(data)})
 
     useEffect(()=>{
+        // Set local state data to format accepted by TreebeardJS
         setLocalTreeData({...treeModel(data)});
     }, [data]);
 
     decorators.Header = CustomHeader;
 
-    const [refresh, setRefresh] = useState(0);
+    const [repaint, setRepaint] = useState(null);
 
     const onToggle = (node, toggled) => {
         if (cursor) {
@@ -37,19 +38,20 @@ function ConnectedTreeView(props) {
         node.toggled = toggled;
         setCursor(node);
 
-        setRefresh(refresh + 1);
+        // Render nodes
+        setRepaint(!repaint);
     };
 
     const toggleScenarios = () => {
-        console.log(`toggling data value`, data);
+        console.log(`toggling data from value`, data);
         if (data){
             dispatch(resetTreeData());
         } else {
-            dispatch(refreshTreeData());
+            dispatch(refreshTreeDataAsync());
         }
     };
 
-    console.log(`tree local data rendered ${refresh}`, localTreeData);
+    console.log(`tree local data to render`, localTreeData);
 
     return (
         <>

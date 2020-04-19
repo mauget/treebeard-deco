@@ -3,15 +3,16 @@ import './App.css';
 import TreeView from "./TreeView";
 import {Col, Container, Row} from "react-bootstrap";
 import {connect} from "react-redux";
+import {refreshTreeDataAsync} from "./actions";
 
 function ConnectedApp(props) {
     console.log('props', props);
-    const {data} = {...props};
+    const {data, dispatch} = {...props};
 
-    // Used for logging only
+    // Initially load tree
     useEffect(() => {
-        console.log('useEffect data', data);
-    }, [data]);
+        dispatch(refreshTreeDataAsync());
+    }, [dispatch]);
 
     return <div className="App">
         <Container fluid={"sm"}>

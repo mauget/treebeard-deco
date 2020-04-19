@@ -1,14 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
 import {Provider} from "react-redux";
-import {createStore} from "redux";
+import {createStore, applyMiddleware} from "redux";
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reducer from "./reducer";
+import thunk from 'redux-thunk';
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunk));
 console.log('store', store);
 
 const ProvidedApp = () => (
