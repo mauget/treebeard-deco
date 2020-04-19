@@ -7,7 +7,7 @@ export const RESET_TREE_DATA = 'RESET_TREE_DATA';
 export const REFRESH_TREE_DATA = 'REFRESH_TREE_DATA';
 
 /*
- * action creators
+ * Synchronous action creators
  */
 export function resetTreeData() {
     return {type: RESET_TREE_DATA};
@@ -18,12 +18,16 @@ export function refreshTreeData(payload) {
     return {type: REFRESH_TREE_DATA, payload};
 }
 
+/*
+ * Asynchronous action creators return a thunk that has a dispatch function as a parameter.
+ * The thunk can do asynchronous processing such as network requests returning promises or using async/await notation.
+ */
 export function refreshTreeDataAsync() {
     return (dispatch) => {
-        setTimeout(() => {
-            // Can invoke sync or async actions with `dispatch`
-            const payload = getScenarios();
+        setTimeout(async () => {
+            // A thunk can dispatch any kind of action vis its dispatch parameter
+            const payload = await getScenarios();
             dispatch(refreshTreeData(payload));
-        }, 1000);
+        }, 400);
     };
 }
