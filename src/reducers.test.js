@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom/extend-expect';
 import reducers from './reducers';
 
 describe('Reducers', ()=>{

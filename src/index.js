@@ -13,7 +13,7 @@ import * as serviceWorker from './serviceWorker';
 const composeEnhancers = composeWithDevTools({
     // options like actionSanitizer, stateSanitizer
 });
-const store = createStore(reducers, {data: null}, composeEnhancers(
+export const store = createStore(reducers, /*{data: null},*/ composeEnhancers(
     applyMiddleware(thunk),
     // other store enhancers, if any
 ));

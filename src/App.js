@@ -5,8 +5,8 @@ import {Col, Container, Row} from "react-bootstrap";
 import {connect} from "react-redux";
 import {refreshTreeDataAsync} from "./actions";
 
-function ConnectedApp(props) {
-    console.log('props', props);
+export function ConnectedApp(props) {
+    // console.log('props', props);
     const {data, dispatch} = {...props};
 
     // Initially load tree
