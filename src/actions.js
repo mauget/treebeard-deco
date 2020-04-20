@@ -18,16 +18,21 @@ export function refreshTreeData(payload) {
     return {type: REFRESH_TREE_DATA, payload};
 }
 
+// Exported for testing
+export const thunkFetchScenarios = (dispatch) => {
+    setTimeout(async () => {
+        // A thunk can dispatch any kind of action vis its dispatch parameter
+        const payload = await getScenarios();
+        dispatch(refreshTreeData(payload));
+    }, 400);
+};
+
 /*
  * Asynchronous action creators return a thunk that has a dispatch function as a parameter.
  * The thunk can do asynchronous processing such as network requests returning promises or using async/await notation.
  */
 export function refreshTreeDataAsync() {
     return (dispatch) => {
-        setTimeout(async () => {
-            // A thunk can dispatch any kind of action vis its dispatch parameter
-            const payload = await getScenarios();
-            dispatch(refreshTreeData(payload));
-        }, 400);
+        thunkFetchScenarios(dispatch);
     };
 }
