@@ -26,20 +26,19 @@ function ConnectedTreeView(props) {
 
 
     const [renderCount, setRenderCount] = useState(0);
-    const reRender = () => setRenderCount(renderCount + 1);
+    const refresh = () => setRenderCount(renderCount + 1);
 
     const onToggle = (node, toggled) => {
-        // Extinguish previous
+        // De-highlight previous
         previousNode.current.active = false;
 
-        // Set current node highlight and toggle.
+        // Set current node highlight (i.e. active), toggle,
+        // and cache it for next onToggle to de-highlight it
         node.active = !node.active;
         node.toggled = toggled;
-
-        // Cache this node
         previousNode.current = node;
 
-        reRender();
+        refresh();
     };
 
     const toggleScenarios = () => {
@@ -72,7 +71,14 @@ function ConnectedTreeView(props) {
 }
 
 ConnectedTreeView.propTypes = {
-    data: PropTypes.object
+    data: PropTypes.shape({
+        name: PropTypes.string,
+        active: PropTypes.bool,
+        toggled: PropTypes.bool,
+        children: PropTypes.arrayOf(PropTypes.object),
+        data: PropTypes.object,
+    }),
+    dispatch: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({data: state.data});
