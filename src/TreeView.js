@@ -1,7 +1,7 @@
 // Ref flow from https://codesandbox.io/s/q5ae9vg0
 // Lou Mauget, 2020-02-20 (lotta 0's and 2's)
 
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 // noinspection ES6CheckImport
 import {decorators, Treebeard} from 'react-treebeard';
@@ -16,7 +16,7 @@ function ConnectedTreeView(props) {
     const {data, dispatch} = {...props};
 
     const [theme] = useState(customTheme());
-    const [cursor, setCursor] = useState({active: false});
+    const previousNode = useRef({active: false});
     const [localTreeData, setLocalTreeData] = useState({...treeModel(data)})
 
     useEffect(()=>{
@@ -24,21 +24,20 @@ function ConnectedTreeView(props) {
         setLocalTreeData({...treeModel(data)});
     }, [data]);
 
-    decorators.Header = CustomHeader;
 
     const [repaint, setRepaint] = useState(null);
 
     const onToggle = (node, toggled) => {
-        if (cursor) {
-            // Resets previous node's highlight, if any
-            cursor.active = false;
-        }
-        // Set current node highlight
+        // Extinguish previous
+        previousNode.current.active = false;
+
+        // Set current node highlight and toggle.
         node.active = !node.active;
         node.toggled = toggled;
-        setCursor(node);
 
-        // Render nodes
+        // Cache this node
+        previousNode.current = node;
+
         setRepaint(!repaint);
     };
 
@@ -53,6 +52,9 @@ function ConnectedTreeView(props) {
 
     console.log(`tree local data to render`, localTreeData);
 
+    // Replacer header decorator of default decorators
+    decorators.Header = CustomHeader;
+
     return (
         <>
             <div>
@@ -60,7 +62,6 @@ function ConnectedTreeView(props) {
             </div>
             <br/>
             <Treebeard
-                decorators={decorators}
                 style={theme}
                 data={localTreeData}
                 onToggle={onToggle}
