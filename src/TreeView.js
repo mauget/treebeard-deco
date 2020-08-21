@@ -25,7 +25,8 @@ function ConnectedTreeView(props) {
     }, [data]);
 
 
-    const [repaint, setRepaint] = useState(null);
+    const [renderCount, setRenderCount] = useState(0);
+    const reRender = () => setRenderCount(renderCount + 1);
 
     const onToggle = (node, toggled) => {
         // Extinguish previous
@@ -38,7 +39,7 @@ function ConnectedTreeView(props) {
         // Cache this node
         previousNode.current = node;
 
-        setRepaint(!repaint);
+        reRender();
     };
 
     const toggleScenarios = () => {
