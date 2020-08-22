@@ -38,7 +38,7 @@ function ConnectedTreeView(props) {
         refresh();
     };
 
-    const toggleScenarios = () => {
+    const toggleFolders = () => {
         if (data) {
             dispatch(resetTreeData());
             return;
@@ -55,7 +55,7 @@ function ConnectedTreeView(props) {
     return (
         <>
             <div>
-                <Button onClick={toggleScenarios}>{`${data ? 'Clear' : 'Load'} Scenarios`}</Button>
+                <Button onClick={toggleFolders}>{`${data ? 'Clear' : 'Load'} Tree Data`}</Button>
             </div>
             <br/>
             <Treebeard

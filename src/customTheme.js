@@ -14,34 +14,25 @@ export default function customTheme() {
     // Highlight active link
     theme.tree.node.activeLink = {
         ...theme.tree.node.activeLink,
-        background: '#dddddd',
-        color: 'blue',
-        border: '4px solid blue',
-        paddingLeft: '4px',
-        paddingRight: '4px',
-        fontWeight: 'bold',
+        // background: '#dddddd',
+        // color: 'blue',
+        // border: '2px solid blue',
+        // paddingLeft: '4px',
+        // paddingRight: '4px',
+        // fontWeight: 'bold',
+        // borderRadius: '6px'
     };
 
+    // Nullify rendering Treebeard's rotating svg twisty
     theme.tree.node.toggle = {
         ...theme.tree.node.toggle,
-        base: {
-            ...theme.tree.node.toggle.base,
-            marginLeft: '0',
-            height: '0',
-            width: '0',
-        },
-        wrapper: {
-            ...theme.tree.node.toggle.base,
-            position: 'absolute',
-            top: '0',
-            left: '0,',
-            margin: '0',
-            height: '0',
-        },
         height: 0,
         width: 0,
-        arrow: {
-        },
     };
+
+    theme.tree.node.subtree = {
+        ...theme.tree.node.subtree,
+        paddingLeft: '2.0rem'
+    }
     return theme;
 }

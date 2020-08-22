@@ -1,5 +1,5 @@
 /**
- * Returns a TreeBeard data model, given a list of data item.
+ * Returns a TreeBeard data model, given a list of data item.s
  * We sort inserted items sorted by names.
  */
 
@@ -9,38 +9,15 @@ export default function treeModel(dataArg) {
         name: 'Workspace',
         data: {},
         toggled: true,
-
         children: [
             {
                 name: 'Scenarios',
                 data: {},
                 toggled: true,
-
+                active: false,
                 children: [
-                    //* Programmatically add dynamic children here */
-                ],
-            },
-            {
-                name: 'Base Layers',
-                data: {},
-
-                toggled: true,
-                children: [
-                    {
-                        name: 'Roads',
-                        data: {},
-
-                    },
-                    {
-                        name: 'Test 1',
-                        data: {},
-
-                    },
-                    {
-                        name: 'Test 2',
-                        data: {},
-
-                    },
+                    //* Add dynamic children here */
+                    {}
                 ],
             },
         ],
@@ -49,7 +26,7 @@ export default function treeModel(dataArg) {
 
     const isFiniteArray = (a) => a && Array.isArray(a) && a.length > 0;
 
-    const insertOptionalStrikes = (dataParent, treeParent) => {
+    const insertOptionalChildren = (dataParent, treeParent) => {
         const { strikes } = dataParent;
 
         if (isFiniteArray(strikes)) {
@@ -78,7 +55,7 @@ export default function treeModel(dataArg) {
                 child.data = data;
                 child.active = false;
 
-                insertOptionalStrikes(data, child);
+                insertOptionalChildren(data, child);
 
                 insertionPoint.splice(insertionPoint.length, 0, child);
             }

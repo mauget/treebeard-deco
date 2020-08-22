@@ -5,7 +5,7 @@ import {
     refreshTreeData,
     refreshTreeDataAsync,
     resetTreeData,
-    thunkFetchScenarios,
+    thunkFetchParents,
 } from "./actions";
 
 describe("Actions tests", () => {
@@ -24,7 +24,7 @@ describe("Actions tests", () => {
     test("thunkFetchScenarios", () => {
         const dispatch = jest.fn();
 
-        thunkFetchScenarios(dispatch);
+        thunkFetchParents(dispatch);
     });
 
     test("refreshTreeDataAsync", () => {

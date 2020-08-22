@@ -4,10 +4,8 @@ import {FaFolder, FaFolderOpen, FaFileAlt} from 'react-icons/fa';
 import ContextModel from './ContextModel';
 
 function DisplayDetailNode() {
-    const marginNonFolder = {marginLeft: '1.0rem'};
     return (
         <>
-            <span style={marginNonFolder}/>
             <FaFileAlt/>
         </>
     );
@@ -15,13 +13,13 @@ function DisplayDetailNode() {
 
 function DisplayNode(props) {
     const {children, isFolder, isOpen} = {...props};
-    const textLeftMargin = {marginLeft: '0.2rem'};
+    // const subTreeIndent = {marginLeft: '0.25rem'};
     return (
         <>
             {isFolder && isOpen && <FaFolderOpen/>}
             {isFolder && !isOpen && <FaFolder/>}
             {!isFolder && <DisplayDetailNode/>}
-            <span style={textLeftMargin}>{children}</span>
+            <span>{children}</span>
         </>
     );
 }

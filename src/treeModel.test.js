@@ -1,11 +1,11 @@
 import treeModel from './treeModel';
-import getScenarios from './getScenarios';
+import getContainers from './getContainers';
 
 describe('treeModel', () => {
-    test('that getScenarios() creates expected Treebeard data', () => {
-        const dataTb = treeModel(getScenarios());
+    test('that getContainers() creates expected Treebeard data', () => {
+        const dataTb = treeModel(getContainers());
 
-        expect(dataTb.children[0].children.length).toBe(4);
-        expect(dataTb.children[0].children[0].name).toBe('demo');
+        expect(dataTb.children[0].children.length).toBe(5);
+        expect(dataTb.children[0].children[0].name).toBe(undefined);
     });
 });

@@ -1,7 +1,7 @@
 /*
  * action types
  */
-import getScenarios from './getScenarios';
+import getContainers from './getContainers';
 
 export const RESET_TREE_DATA = 'RESET_TREE_DATA';
 export const REFRESH_TREE_DATA = 'REFRESH_TREE_DATA';
@@ -20,12 +20,12 @@ export function refreshTreeData(payload) {
 }
 
 // Exported for testing
-export const thunkFetchScenarios = (dispatch) => {
+export const thunkFetchParents = (dispatch) => {
     setTimeout(async () => {
         // A thunk can dispatch any kind of action vis its dispatch parameter
-        const payload = await getScenarios();
+        const payload = await getContainers();
         dispatch(refreshTreeData(payload));
-    }, 400);
+    }, 0);
 };
 
 /*
@@ -35,6 +35,6 @@ export const thunkFetchScenarios = (dispatch) => {
  */
 export function refreshTreeDataAsync() {
     return (dispatch) => {
-        thunkFetchScenarios(dispatch);
+        thunkFetchParents(dispatch);
     };
 }
