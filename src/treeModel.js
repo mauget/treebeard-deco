@@ -40,7 +40,7 @@ export default function treeModel(dataArg) {
                         name: 'Test 2',
                         data: {},
 
-                    }
+                    },
                 ],
             },
         ],
@@ -50,11 +50,12 @@ export default function treeModel(dataArg) {
     const isFiniteArray = (a) => a && Array.isArray(a) && a.length > 0;
 
     const insertOptionalStrikes = (dataParent, treeParent) => {
-        const strikes = dataParent.strikes;
+        const { strikes } = dataParent;
 
-        if (isFiniteArray(strikes)){
-            treeParent.toggled = true;
-            treeParent.children = [];
+        if (isFiniteArray(strikes)) {
+            const treeParentRef = treeParent;
+            treeParentRef.toggled = true;
+            treeParentRef.children = [];
             strikes.forEach((s) => {
                 const aStrike = {};
                 aStrike.name = `~ ${s.name}`;
@@ -68,7 +69,7 @@ export default function treeModel(dataArg) {
 
     Object
         .keys(dataItems)
-        .sort((a, b) => (a <  b ? -1 : 1))
+        .sort((a, b) => (a < b ? -1 : 1))
         .forEach((key) => {
             if (key) {
                 const data = dataItems[key];
@@ -80,10 +81,7 @@ export default function treeModel(dataArg) {
                 insertOptionalStrikes(data, child);
 
                 insertionPoint.splice(insertionPoint.length, 0, child);
-            } else {
-                console.log('ERROR. Unexpected falsey key')
             }
         });
-
     return tbData;
 }

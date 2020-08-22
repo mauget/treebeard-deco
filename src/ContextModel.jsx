@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import {Button, Modal} from "react-bootstrap";
+import { Button, Modal } from 'react-bootstrap';
 
-export function ContextModel(props) {
-    const {show, onClose} = {...props};
+export default function ContextModel(props) {
+    const { show, onClose } = { ...props };
 
     return !show ? null : (
         <>
@@ -23,10 +23,17 @@ export function ContextModel(props) {
             </Modal>
         </>
     );
-
 }
 
 ContextModel.propTypes = {
+    // eslint-disable-next-line react/no-unused-prop-types
     show: PropTypes.bool,
-    onClose: PropTypes.func.isRequired,
+    // eslint-disable-next-line react/no-unused-prop-types
+    onClose: PropTypes.func,
+};
+
+ContextModel.defaultProps = {
+    show: false,
+    onClose: () => {
+    },
 };

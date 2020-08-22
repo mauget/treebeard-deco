@@ -1,29 +1,25 @@
-// Ref flow from https://codesandbox.io/s/q5ae9vg0
-// Lou Mauget, 2020-02-20 (lotta 0's and 2's)
-
 import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 // noinspection ES6CheckImport
 import {decorators, Treebeard} from 'react-treebeard';
+import Button from 'react-bootstrap/Button';
+import {connect} from 'react-redux';
 import CustomHeader from './CustomHeader';
 import customTheme from './customTheme';
-import Button from "react-bootstrap/Button";
-import {connect} from "react-redux";
-import {refreshTreeDataAsync, resetTreeData} from "./actions";
-import treeModel from "./treeModel";
+import {refreshTreeDataAsync, resetTreeData} from './actions';
+import treeModel from './treeModel';
 
 function ConnectedTreeView(props) {
     const {data, dispatch} = {...props};
 
     const [theme] = useState(customTheme());
     const previousNode = useRef({active: false});
-    const [localTreeData, setLocalTreeData] = useState({...treeModel(data)})
+    const [localTreeData, setLocalTreeData] = useState({...treeModel(data)});
 
-    useEffect(()=>{
+    useEffect(() => {
         // Set local state data to format accepted by TreebeardJS
         setLocalTreeData({...treeModel(data)});
     }, [data]);
-
 
     const [renderCount, setRenderCount] = useState(0);
     const refresh = () => setRenderCount(renderCount + 1);
@@ -34,23 +30,24 @@ function ConnectedTreeView(props) {
 
         // Set current node highlight (i.e. active), toggle,
         // and cache it for next onToggle to de-highlight it
-        node.active = !node.active;
-        node.toggled = toggled;
+        const currentNode = node;
+        currentNode.active = !currentNode.active;
+        currentNode.toggled = toggled;
         previousNode.current = node;
 
         refresh();
     };
 
     const toggleScenarios = () => {
-        console.log(`toggling data from value`, data);
-        if (data){
+        if (data) {
             dispatch(resetTreeData());
-        } else {
-            dispatch(refreshTreeDataAsync());
+            return;
         }
+        dispatch(refreshTreeDataAsync());
     };
 
-    console.log(`tree local data to render`, localTreeData);
+    // eslint-disable-next-line no-console
+    console.log('tree local data to render', localTreeData);
 
     // Replacer header decorator of default decorators
     decorators.Header = CustomHeader;
@@ -58,7 +55,7 @@ function ConnectedTreeView(props) {
     return (
         <>
             <div>
-                <Button onClick={toggleScenarios}>{`${data ? "Clear" : "Load"} Scenarios`}</Button>
+                <Button onClick={toggleScenarios}>{`${data ? 'Clear' : 'Load'} Scenarios`}</Button>
             </div>
             <br/>
             <Treebeard
@@ -76,10 +73,13 @@ ConnectedTreeView.propTypes = {
         active: PropTypes.bool,
         toggled: PropTypes.bool,
         children: PropTypes.arrayOf(PropTypes.object),
-        data: PropTypes.object,
+        data: PropTypes.shape({}),
     }),
-    dispatch: PropTypes.func.isRequired,
 };
+
+ConnectedTreeView.defaultProps = {
+    data: {},
+}
 
 const mapStateToProps = (state) => ({data: state.data});
 

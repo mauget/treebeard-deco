@@ -1,7 +1,7 @@
 /*
  * action types
  */
-import getScenarios from "./getScenarios";
+import getScenarios from './getScenarios';
 
 export const RESET_TREE_DATA = 'RESET_TREE_DATA';
 export const REFRESH_TREE_DATA = 'REFRESH_TREE_DATA';
@@ -10,12 +10,13 @@ export const REFRESH_TREE_DATA = 'REFRESH_TREE_DATA';
  * Synchronous action creators
  */
 export function resetTreeData() {
-    return {type: RESET_TREE_DATA};
+    return { type: RESET_TREE_DATA };
 }
 
 export function refreshTreeData(payload) {
-    console.log(`refreshTreeData payload`, payload);
-    return {type: REFRESH_TREE_DATA, payload};
+    // eslint-disable-next-line no-console
+    console.log('refreshTreeData payload', payload);
+    return { type: REFRESH_TREE_DATA, payload };
 }
 
 // Exported for testing
@@ -29,7 +30,8 @@ export const thunkFetchScenarios = (dispatch) => {
 
 /*
  * Asynchronous action creators return a thunk that has a dispatch function as a parameter.
- * The thunk can do asynchronous processing such as network requests returning promises or using async/await notation.
+ * The thunk can do asynchronous processing such as network requests returning promises or
+ * using async/await notation.
  */
 export function refreshTreeDataAsync() {
     return (dispatch) => {
