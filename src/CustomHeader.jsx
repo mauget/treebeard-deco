@@ -1,9 +1,33 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
+import {FaFolder, FaFolderOpen, FaFileAlt} from 'react-icons/fa';
 import ContextModel from './ContextModel';
 
+function DisplayDetailNode() {
+    const marginNonFolder = {marginLeft: '1.0rem'};
+    return (
+        <>
+            <span style={marginNonFolder}/>
+            <FaFileAlt/>
+        </>
+    );
+}
+
+function DisplayNode(props) {
+    const {children, isFolder, isOpen} = {...props};
+    const textLeftMargin = {marginLeft: '0.2rem'};
+    return (
+        <>
+            {isFolder && isOpen && <FaFolderOpen/>}
+            {isFolder && !isOpen && <FaFolder/>}
+            {!isFolder && <DisplayDetailNode/>}
+            <span style={textLeftMargin}>{children}</span>
+        </>
+    );
+}
+
 export default function CustomHeader(props) {
-    const { node, style } = props;
+    const {node, style} = props;
     const displayName = node.name;
     const headerStyle = style.base;
 
@@ -23,16 +47,18 @@ export default function CustomHeader(props) {
         togglePopup();
     };
 
+    const isFolder = node.children && node.children.length;
+    const isOpen = node.toggled;
+
     return (
         <>
             <div style={headerStyle}>
-                {/* eslint-disable-next-line max-len */}
-                {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+                {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions,jsx-a11y/click-events-have-key-events */}
                 <div onClick={onHeaderClick} onContextMenu={onContextMenu}>
-                    {displayName}
+                    <DisplayNode isFolder={isFolder} isOpen={isOpen}>{displayName}</DisplayNode>
                 </div>
             </div>
-            <ContextModel show={isDialogOpen} onClose={togglePopup} />
+            <ContextModel show={isDialogOpen} onClose={togglePopup}/>
         </>
     );
 }

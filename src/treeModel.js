@@ -58,7 +58,7 @@ export default function treeModel(dataArg) {
             treeParentRef.children = [];
             strikes.forEach((s) => {
                 const aStrike = {};
-                aStrike.name = `~ ${s.name}`;
+                aStrike.name = `${s.name}`;
                 aStrike.data = s;
                 aStrike.active = false;
 

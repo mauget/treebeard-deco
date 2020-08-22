@@ -14,8 +14,8 @@ export default function customTheme() {
     // Highlight active link
     theme.tree.node.activeLink = {
         ...theme.tree.node.activeLink,
-        background: 'white',
-        color: 'black',
+        background: '#dddddd',
+        color: 'blue',
         border: '4px solid blue',
         paddingLeft: '4px',
         paddingRight: '4px',
@@ -26,9 +26,21 @@ export default function customTheme() {
         ...theme.tree.node.toggle,
         base: {
             ...theme.tree.node.toggle.base,
+            marginLeft: '0',
+            height: '0',
+            width: '0',
         },
         wrapper: {
-            ...theme.tree.node.toggle.wrapper,
+            ...theme.tree.node.toggle.base,
+            position: 'absolute',
+            top: '0',
+            left: '0,',
+            margin: '0',
+            height: '0',
+        },
+        height: 0,
+        width: 0,
+        arrow: {
         },
     };
     return theme;
