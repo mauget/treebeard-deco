@@ -11,7 +11,7 @@ This tree view uses a slightly cutomized header via a standard TreeBeard-supplie
 1. `yarn install`
 1. `yarn start`
 
-Additionally, this demo uses a `treeModel` populated from a `getContainers` function to
+Additionally, this demo uses a `treeModel` populated from a `getDataObject` function to
 create dummy data for the tree.
 
 ![Screen Capture](doc/treebeard-decorated.png?raw=true)

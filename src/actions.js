@@ -1,7 +1,7 @@
 /*
  * action types
  */
-import getContainers from './getContainers';
+import getDataObject from './getDataObject';
 
 export const RESET_TREE_DATA = 'RESET_TREE_DATA';
 export const REFRESH_TREE_DATA = 'REFRESH_TREE_DATA';
@@ -23,7 +23,7 @@ export function refreshTreeData(payload) {
 export const thunkFetchParents = (dispatch) => {
     setTimeout(async () => {
         // A thunk can dispatch any kind of action vis its dispatch parameter
-        const payload = await getContainers();
+        const payload = await getDataObject();
         dispatch(refreshTreeData(payload));
     }, 0);
 };

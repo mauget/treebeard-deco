@@ -1,9 +1,9 @@
 import treeModel from './treeModel';
-import getContainers from './getContainers';
+import getDataObject from './getDataObject';
 
 describe('treeModel', () => {
-    test('that getContainers() creates expected Treebeard data', () => {
-        const dataTb = treeModel(getContainers());
+    test('that getDataObject() creates expected Treebeard data', () => {
+        const dataTb = treeModel(getDataObject());
 
         expect(dataTb.children[0].children.length).toBe(4);
         expect(dataTb.children[0].children[0].name).toBe('Demo');
