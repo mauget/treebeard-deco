@@ -7,9 +7,9 @@ This tree view uses a slightly cutomized header via a standard TreeBeard-supplie
 ### Install and Run
 
 1. `git clone https://github.com/mauget/treebeard-deco`
-2. `cd treebeard-deco`
-3. `yarn install`
-4. `yarn start`
+1. `cd treebeard-deco`
+1. `yarn install`
+1. `yarn start`
 
 Additionally, this demo uses a `treeModel` populated from a `getContainers` function to
 create dummy data for the tree.
@@ -18,9 +18,8 @@ create dummy data for the tree.
 
 ### Custom Features
 
-1. mouseover highlight of nodes
-2. Right-click context
-3. Left-click callback
+1. Right-click context
+1. Left-click callback
 
 
 -------------------------
