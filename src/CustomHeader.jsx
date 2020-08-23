@@ -1,24 +1,17 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import {FaFolder, FaFolderOpen, FaFileAlt} from 'react-icons/fa';
+import { FaFolder, FaFolderOpen } from 'react-icons/fa';
+import { BiBomb } from "react-icons/bi";
 import ContextModel from './ContextModel';
-
-function DisplayDetailNode() {
-    return (
-        <>
-            <FaFileAlt/>
-        </>
-    );
-}
 
 function DisplayNode(props) {
     const {children, isFolder, isOpen} = {...props};
     const subTreeIndent = {marginLeft: '0.25rem'};
     return (
         <>
-            {isFolder && isOpen && <FaFolderOpen/>}
-            {isFolder && !isOpen && <FaFolder/>}
-            {!isFolder && <DisplayDetailNode/>}
+            {isFolder && !isOpen && <FaFolder style={{color: "orange"}}/>}
+            {isFolder && isOpen && <FaFolderOpen style={{color: "orange"}}/>}
+            {!isFolder && <BiBomb  style={{color: "red"}}/>}
             <span style={subTreeIndent}>{children}</span>
         </>
     );
