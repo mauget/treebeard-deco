@@ -1,9 +1,29 @@
 import React, { useEffect } from 'react';
-import './App.css';
-import { Col, Container, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import TreeView from './TreeView';
 import { refreshTreeDataAsync } from './actions';
+import styled from 'styled-components';
+
+const View = styled.div`
+    text-align: left;
+    background-color: #282c34;
+    color: lightgray;
+    min-height: 90vh;
+    margin: 0.5rem;
+    border: lightgray;
+    padding: 1.0rem;
+    cursor: default;
+`;
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+`;
+
+const Heading = styled.h2`
+    color: lightgray;
+`;
 
 export function ConnectedApp(props) {
     // console.log('props', props);
@@ -15,20 +35,12 @@ export function ConnectedApp(props) {
     }, [dispatch]);
 
     return (
-        <div className="App">
-            <Container fluid="sm">
-                <Row>
-                    <Col>
-                        <h1>Tree View via Decorators</h1>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={3}>
-                        <TreeView data={data} />
-                    </Col>
-                </Row>
+        <View>
+            <Container>
+                <Heading>Tree View via Decorators</Heading>
+                <TreeView data={data} />
             </Container>
-        </div>
+        </View>
     );
 }
 

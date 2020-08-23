@@ -7,11 +7,12 @@ export default function customTheme() {
 
     theme.tree.base = {
         ...theme.tree.base,
-        color: 'white',
+        color: 'darkgray',
         backgroundColor: '#282c34',
     };
 
     // Highlight active link
+    /*
     theme.tree.node.activeLink = {
         ...theme.tree.node.activeLink,
         // background: '#dddddd',
@@ -22,6 +23,7 @@ export default function customTheme() {
         // fontWeight: 'bold',
         // borderRadius: '6px'
     };
+    */
 
     // Nullify rendering Treebeard's rotating svg twisty
     theme.tree.node.toggle = {
@@ -32,7 +34,7 @@ export default function customTheme() {
 
     theme.tree.node.subtree = {
         ...theme.tree.node.subtree,
-        paddingLeft: '2.0rem'
+        paddingLeft: '1.75rem'
     }
     return theme;
 }

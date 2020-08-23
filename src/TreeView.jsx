@@ -2,12 +2,18 @@ import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 // noinspection ES6CheckImport
 import {decorators, Treebeard} from 'react-treebeard';
-import Button from 'react-bootstrap/Button';
+import styled from 'styled-components';
 import {connect} from 'react-redux';
 import CustomHeader from './CustomHeader';
 import customTheme from './customTheme';
-import {refreshTreeDataAsync, resetTreeData} from './actions';
+import { refreshTreeDataAsync, resetTreeData } from './actions';
 import treeModel from './treeModel';
+
+const StyledButton = styled.button`
+    background: #444444;
+    color: lightgray;
+    margin: 0.5rem;
+`;
 
 function ConnectedTreeView(props) {
     const {data, dispatch} = {...props};
@@ -53,17 +59,14 @@ function ConnectedTreeView(props) {
     decorators.Header = CustomHeader;
 
     return (
-        <>
-            <div>
-                <Button onClick={toggleFolders}>{`${data ? 'Clear' : 'Load'} Tree Data`}</Button>
-            </div>
-            <br/>
+        <div>
+            <StyledButton onClick={toggleFolders}>{`${data ? 'Clear' : 'Load'} Dynamic Data`}</StyledButton>
             <Treebeard
                 style={theme}
                 data={localTreeData}
                 onToggle={onToggle}
             />
-        </>
+        </div>
     );
 }
 
