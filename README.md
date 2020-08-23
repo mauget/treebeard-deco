@@ -14,7 +14,7 @@ This tree view uses a slightly cutomized header via a standard TreeBeard-supplie
 Additionally, this demo uses a `treeModel` populated from a `getContainers` function to
 create dummy data for the tree.
 
-![Screen Capture](doc/treebeard-decorated.png)
+![Screen Capture](doc/treebeard-decorated.png?raw=true)
 
 ### Custom Features
 
