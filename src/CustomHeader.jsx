@@ -13,13 +13,13 @@ function DisplayDetailNode() {
 
 function DisplayNode(props) {
     const {children, isFolder, isOpen} = {...props};
-    // const subTreeIndent = {marginLeft: '0.25rem'};
+    const subTreeIndent = {marginLeft: '0.25rem'};
     return (
         <>
             {isFolder && isOpen && <FaFolderOpen/>}
             {isFolder && !isOpen && <FaFolder/>}
             {!isFolder && <DisplayDetailNode/>}
-            <span>{children}</span>
+            <span style={subTreeIndent}>{children}</span>
         </>
     );
 }
@@ -45,7 +45,7 @@ export default function CustomHeader(props) {
         togglePopup();
     };
 
-    const isFolder = node.children && node.children.length;
+    const isFolder = node.children;
     const isOpen = node.toggled;
 
     return (

@@ -9,15 +9,35 @@ export default function treeModel(dataArg) {
         name: 'Workspace',
         data: {},
         toggled: true,
+        active: false,
         children: [
             {
-                name: 'Scenarios',
+                name: 'Suites',
                 data: {},
                 toggled: true,
                 active: false,
                 children: [
-                    //* Add dynamic children here */
-                    {}
+                    //* Programmatically add dynamic children here */
+                ],
+            },
+            {
+                name: 'Base Suite',
+                data: {},
+                toggled: true,
+                active: false,
+                children: [
+                    {
+                        name: 'Before Each',
+                        data: {},
+                    },
+                    {
+                        name: 'After Each',
+                        data: {},
+                    },
+                    {
+                        name: 'Test Runner',
+                        data: {},
+                    },
                 ],
             },
         ],
@@ -26,20 +46,20 @@ export default function treeModel(dataArg) {
 
     const isFiniteArray = (a) => a && Array.isArray(a) && a.length > 0;
 
-    const insertOptionalChildren = (dataParent, treeParent) => {
-        const { strikes } = dataParent;
+    const insertOptionalNodes = (dataParent, treeParent) => {
+        const { tests: nodes } = dataParent;
 
-        if (isFiniteArray(strikes)) {
+        if (isFiniteArray(nodes)) {
             const treeParentRef = treeParent;
             treeParentRef.toggled = true;
             treeParentRef.children = [];
-            strikes.forEach((s) => {
-                const aStrike = {};
-                aStrike.name = `${s.name}`;
-                aStrike.data = s;
-                aStrike.active = false;
+            nodes.forEach((s) => {
+                const aNode = {};
+                aNode.name = `${s.name}`;
+                aNode.data = s;
+                aNode.active = false;
 
-                treeParent.children.push(aStrike);
+                treeParent.children.push(aNode);
             });
         }
     };
@@ -55,7 +75,7 @@ export default function treeModel(dataArg) {
                 child.data = data;
                 child.active = false;
 
-                insertOptionalChildren(data, child);
+                insertOptionalNodes(data, child);
 
                 insertionPoint.splice(insertionPoint.length, 0, child);
             }
